@@ -1,0 +1,1146 @@
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-26d49e9cd1d82010791",applicationID:"529647296"};/*! For license information please see nr-loader-rum-1220.min.js.LICENSE.txt */
+!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.NRBA=e():t.NRBA=e()}(self,(function(){return function(){var t,e,n={9034:function(t,e,n){"use strict";var r=n(4168);e.Z=(0,r.ky)(16)},5973:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1])},4280:function(t,e,n){"use strict";n.d(e,{H:function(){return o}});var r=document.createElement("div");r.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e";var o,i=r.getElementsByTagName("div").length;o=4===i?6:3===i?7:2===i?8:1===i?9:0},5955:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=function(t,e){var n=this;return t&&"object"==typeof t?e&&"object"==typeof e?(Object.assign(this,e),void Object.entries(t).forEach((function(t){var e=t[0],r=t[1];n[e]=r}))):console.error("setting a Configurable requires a model to set its initial properties"):console.error("setting a Configurable requires an object as input")}},441:function(t,e,n){"use strict";n.d(e,{C:function(){return c},L:function(){return u}});var r=n(1424),o=n(5955),i={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function c(t){if(!t)throw new Error("All info objects require an agent identifier!");if(!a[t])throw new Error("Info for "+t+" was never set");return a[t]}function u(t,e){if(!t)throw new Error("All info objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"info")}},1476:function(t,e,n){"use strict";n.d(e,{Dg:function(){return c},Mt:function(){return u}});var r=n(1424),o=n(5955),i={privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0},metrics:{enabled:!0},page_action:{enabled:!0},page_view_event:{enabled:!0},page_view_timing:{enabled:!0},session_trace:{enabled:!0},spa:{enabled:!0}},a={};function c(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"config")}function u(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");var n=function(t){if(!t)throw new Error("All configuration objects require an agent identifier!");if(!a[t])throw new Error("Configuration for "+t+" was never set");return a[t]}(t);if(n){for(var r=e.split("."),o=0;o<r.length-1;o++)if("object"!=typeof(n=n[r[o]]))return;n=n[r[r.length-1]]}return n}},2085:function(t,e,n){"use strict";n.d(e,{Y:function(){return r}});var r=(0,n(1424).mF)().o},1220:function(t,e,n){"use strict";n.d(e,{O:function(){return w},s:function(){return x}});var r={};n.r(r),n.d(r,{agent:function(){return a},match:function(){return f},version:function(){return c}});var o=n(4280),i=n(6959),a=null,c=null;if(navigator.userAgent){var u=navigator.userAgent,s=u.match(/Version\/(\S+)\s+Safari/);s&&-1===u.indexOf("Chrome")&&-1===u.indexOf("Chromium")&&(a="Safari",c=s[1])}function f(t,e){if(!a)return!1;if(t!==a)return!1;if(!e)return!0;if(!c)return!1;for(var n=c.split("."),r=e.split("."),o=0;o<r.length;o++)if(r[o]!==n[o])return!1;return!0}var d=n(5955),l=n(1424),v=n(4168),p=window.sessionStorage,h="NRBA_SESSION_ID";var g=n(1476),y=window.XMLHttpRequest,m=y&&y.prototype,b={};function w(t){if(!t)throw new Error("All runtime objects require an agent identifier!");if(!b[t])throw new Error("Runtime for "+t+" was never set");return b[t]}function x(t,e){if(!t)throw new Error("All runtime objects require an agent identifier!");var n,a;b[t]=new d.I(e,(n=t,{customTransaction:void 0,disabled:!1,features:{},maxBytes:6===o.H?2e3:3e4,offset:(0,i.yf)(),onerror:void 0,origin:""+window.location,ptid:void 0,releaseIds:{},sessionId:!0===(0,g.Mt)(n,"privacy.cookies_enabled")?(null===(a=p.getItem(h))&&(a=(0,v.ky)(16),p.setItem(h,a)),a):"0",xhrWrappable:y&&m&&m.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:r})),(0,l.Qy)(t,b[t],"runtime")}},158:function(t,e,n){"use strict";n.d(e,{q:function(){return r}});var r=["1220","PROD"].filter((function(t){return t})).join(".")},3707:function(t,e,n){"use strict";n.d(e,{w:function(){return o}});var r={agentIdentifier:""},o=function(t){var e=this;if("object"!=typeof t)return console.error("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,r),Object.entries(t).forEach((function(t){var n=t[0],o=t[1];Object.keys(r).includes(n)&&(e.sharedContext[n]=o)}))}},1776:function(t,e,n){"use strict";n.d(e,{ee:function(){return r}});var r,o=n(1424),i=n(4217),a=n(357),c="nr@context",u=(0,o.fP)();function s(){}function f(){return new s}function d(){(r.backlog.api||r.backlog.feature)&&(r.aborted=!0,r.backlog={})}u.ee?r=u.ee:(r=function t(e,n){var o={},u={},l={},v={on:g,addEventListener:g,removeEventListener:y,emit:h,get:b,listeners:m,context:p,buffer:w,abort:d,aborted:!1,isBuffering:x,debugId:n,backlog:e&&e.backlog?e.backlog:{}};return v;function p(t){return t&&t instanceof s?t:t?(0,i.X)(t,c,f):f()}function h(t,n,o,i,a){if(!1!==a&&(a=!0),!r.aborted||i){e&&a&&e.emit(t,n,o);for(var c=p(o),s=m(t),f=s.length,d=0;d<f;d++)s[d].apply(c,n);var l=O()[u[t]];return l&&l.push([v,t,n,c]),c}}function g(t,e){o[t]=m(t).concat(e)}function y(t,e){var n=o[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return o[t]||[]}function b(e){return l[e]=l[e]||t(v,e)}function w(t,e){var n=O();v.aborted||(0,a.D)(t,(function(t,r){e=e||"feature",u[r]=e,e in n||(n[e]=[])}))}function x(t){return!!O()[u[t]]}function O(){return v.backlog}}(void 0,"globalEE"),u.ee=r)},7361:function(t,e,n){"use strict";n.d(e,{E:function(){return r},p:function(){return o}});var r=n(1776).ee.get("handle");function o(t,e,n,o,i){i?(i.buffer([t],o),i.emit(t,e,n)):(r.buffer([t],o),r.emit(t,e,n))}},3350:function(t,e,n){"use strict";n.d(e,{X:function(){return i}});var r=n(7361);i.on=a;var o=i.handlers={};function i(t,e,n,i){a(i||r.E,o,t,e,n)}function a(t,e,n,o,i){i||(i="feature"),t||(t=r.E);var a=e[i]=e[i]||{};(a[n]=a[n]||[]).push([t,o])}},4408:function(t,e,n){"use strict";n.d(e,{m:function(){return i}});var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(t){}function i(t){return r?{passive:!0,capture:!!t}:!!t}},4168:function(t,e,n){"use strict";function r(){var t=null,e=0,n=window.crypto||window.msCrypto;function r(){return t?15&t[e++]:16*Math.random()|0}n&&n.getRandomValues&&(t=n.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)a+="x"===(o=i[c])?r().toString(16):"y"===o?(o=3&r()|8).toString(16):o;return a}function o(t){var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<t;i++)o.push(a().toString(16));return o.join("");function a(){return e?15&e[n++]:16*Math.random()|0}}n.d(e,{Rl:function(){return r},ky:function(){return o}})},6959:function(t,e,n){"use strict";n.d(e,{nb:function(){return u},os:function(){return s},yf:function(){return c},zO:function(){return a}});var r=n(2364),o=(new Date).getTime(),i=o;function a(){return r.G&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-i}function c(){return o}function u(t){i=t}function s(){return i}},2364:function(t,e,n){"use strict";n.d(e,{G:function(){return r}});var r=void 0!==window.performance&&window.performance.timing&&void 0!==window.performance.timing.navigationStart},1793:function(t,e,n){"use strict";function r(t){var e,n=0;for(e=0;e<t.length;e++)n+=(e+1)*t.charCodeAt(e);return Math.abs(n)}n.d(e,{v:function(){return s},s:function(){return u}});var o=n(6972),i=n(5973),a=n(6959),c=n(2364),u=!0;function s(t){var e=function(){if(i.I&&i.I<9)return;if(c.G)return u=!1,window.performance.timing.navigationStart}()||function(){for(var t=document.cookie.split(" "),e=0;e<t.length;e++)if(0===t[e].indexOf("NREUM=")){for(var n,o,i,a,c=t[e].substring("NREUM=".length).split("&"),u=0;u<c.length;u++)0===c[u].indexOf("s=")?i=c[u].substring(2):0===c[u].indexOf("p=")?";"===(o=c[u].substring(2)).charAt(o.length-1)&&(o=o.substr(0,o.length-1)):0===c[u].indexOf("r=")&&";"===(n=c[u].substring(2)).charAt(n.length-1)&&(n=n.substr(0,n.length-1));if(n){var s=r(document.referrer);(a=s==n)||(a=r(document.location.href)==n&&s==o)}if(a&&i){if((new Date).getTime()-i>6e4)return;return i}}}();e&&((0,o.B)(t,"starttime",e),(0,a.nb)(e))}},6972:function(t,e,n){"use strict";n.d(e,{B:function(){return i},L:function(){return a}});var r=n(6959),o={};function i(t,e,n){void 0===n&&(n=(0,r.zO)()+(0,r.os)()),o[t]=o[t]||{},o[t][e]=n}function a(t,e,n,r){var i,a,c=t.sharedContext.agentIdentifier,u=null==(i=o[c])?void 0:i[n],s=null==(a=o[c])?void 0:a[r];void 0!==u&&void 0!==s&&t.store("measures",e,{value:s-u})}},7299:function(t,e,n){"use strict";n.d(e,{T:function(){return a}});var r=window,o=r;function i(){return o}var a={isFileProtocol:function(){var t=i(),e=!(!t.location||!t.location.protocol||"file:"!==t.location.protocol);e&&(a.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},847:function(t,e,n){"use strict";n.d(e,{K:function(){return a}});var r=n(1220),o=n(1476),i=["ajax","jserrors","metrics","page_action","page_view_event","page_view_timing","session_trace","spa"];function a(t){var e={};return i.forEach((function(n){e[n]=function(t,e){return!0!==(0,r.O)(e).disabled&&!1!==(0,o.Mt)(e,t+".enabled")}(n,t)})),e}},5023:function(t,e,n){"use strict";n.d(e,{W:function(){return o}});var r=n(1776),o=function(t,e,n){void 0===n&&(n=[]),this.agentIdentifier=t,this.aggregator=e,this.ee=r.ee.get(t),this.externalFeatures=n}},4217:function(t,e,n){"use strict";n.d(e,{X:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(t){}return t[e]=o,o}},357:function(t,e,n){"use strict";n.d(e,{D:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}},603:function(t,e,n){"use strict";n.d(e,{$c:function(){return s},Ng:function(){return f},RR:function(){return u}});var r=n(1476),o=n(3707),i=n(7299);function a(t,e){return a=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},a(t,e)}var c={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"},u=function(t){var e,n;function r(e){return t.call(this,e)||this}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,a(e,n);var o=r.prototype;return o.shouldObfuscate=function(){return s(this.sharedContext.agentIdentifier).length>0},o.obfuscateString=function(t){if(!t||"string"!=typeof t)return t;for(var e=s(this.sharedContext.agentIdentifier),n=t,r=0;r<e.length;r++){var o=e[r].regex,i=e[r].replacement||"*";n=n.replace(o,i)}return n},r}(o.w);function s(t){var e=[],n=(0,r.Mt)(t,"obfuscate")||[];return e=e.concat(n),i.T.isFileProtocol()&&e.push(c),e}function f(t){for(var e=!1,n=!1,r=0;r<t.length;r++){"regex"in t[r]?"string"!=typeof t[r].regex&&t[r].regex.constructor!==RegExp&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),n=!0):(console&&console.warn&&console.warn('An obfuscation replacement rule was detected missing a "regex" value.'),n=!0);var o=t[r].replacement;o&&"string"!=typeof o&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),e=!0)}return!e&&!n}},1424:function(t,e,n){"use strict";n.d(e,{EZ:function(){return u},Qy:function(){return c},ce:function(){return o},fP:function(){return i},gG:function(){return s},mF:function(){return a}});var r=n(6959),o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function i(){return window.NREUM||(window.NREUM={}),void 0===window.newrelic&&(window.newrelic=window.NREUM),window.NREUM}function a(){var t=i();if(!t.o){var e=window,n=e.XMLHttpRequest;t.o={ST:setTimeout,SI:e.setImmediate,CT:clearTimeout,XHR:n,REQ:e.Request,EV:e.Event,PR:e.Promise,MO:e.MutationObserver,FETCH:e.fetch}}return t}function c(t,e,n){var o,a,c=i(),u=c.initializedAgents||{},s=u[t]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.zO)(),date:new Date}),c.initializedAgents=Object.assign({},u,((a={})[t]=Object.assign({},s,((o={})[n]=e,o)),a)),c}function u(t,e){i()[t]=e}function s(){var t,e;return t=i(),e=t.info||{},t.info=Object.assign({beacon:o.beacon,errorBeacon:o.errorBeacon},e),function(){var t=i(),e=t.init||{};t.init=Object.assign({},e)}(),a(),function(){var t=i(),e=t.loader_config||{};t.loader_config=Object.assign({},e)}(),i()}},8539:function(t){t.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}}},r={};function o(t){var e=r[t];if(void 0!==e)return e.exports;var i=r[t]={exports:{}};return n[t](i,i.exports,o),i.exports}o.m=n,o.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return o.d(e,{a:e}),e},o.d=function(t,e){for(var n in e)o.o(e,n)&&!o.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},o.f={},o.e=function(t){return Promise.all(Object.keys(o.f).reduce((function(e,n){return o.f[n](t,e),e}),[]))},o.u=function(t){return t+"."+o.h().slice(0,8)+"-1220.js"},o.h=function(){return"2d6a2503b7f18a5b77dd"},o.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},t={},e="NRBA:",o.l=function(n,r,i,a){if(t[n])t[n].push(r);else{var c,u;if(void 0!==i)for(var s=document.getElementsByTagName("script"),f=0;f<s.length;f++){var d=s[f];if(d.getAttribute("src")==n||d.getAttribute("data-webpack")==e+i){c=d;break}}c||(u=!0,(c=document.createElement("script")).charset="utf-8",c.timeout=120,o.nc&&c.setAttribute("nonce",o.nc),c.setAttribute("data-webpack",e+i),c.src=n),t[n]=[r];var l=function(e,r){c.onerror=c.onload=null,clearTimeout(v);var o=t[n];if(delete t[n],c.parentNode&&c.parentNode.removeChild(c),o&&o.forEach((function(t){return t(r)})),e)return e(r)},v=setTimeout(l.bind(null,void 0,{type:"timeout",target:c}),12e4);c.onerror=l.bind(null,c.onerror),c.onload=l.bind(null,c.onload),u&&document.head.appendChild(c)}},o.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},o.p="https://js-agent.newrelic.com/",function(){var t={299:0,82:0};o.f.j=function(e,n){var r=o.o(t,e)?t[e]:void 0;if(0!==r)if(r)n.push(r[2]);else{var i=new Promise((function(n,o){r=t[e]=[n,o]}));n.push(r[2]=i);var a=o.p+o.u(e),c=new Error;o.l(a,(function(n){if(o.o(t,e)&&(0!==(r=t[e])&&(t[e]=void 0),r)){var i=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;c.message="Loading chunk "+e+" failed.\n("+i+": "+a+")",c.name="ChunkLoadError",c.type=i,c.request=a,r[1](c)}}),"chunk-"+e,e)}};var e=function(e,n){var r,i,a=n[0],c=n[1],u=n[2],s=0;if(a.some((function(e){return 0!==t[e]}))){for(r in c)o.o(c,r)&&(o.m[r]=c[r]);if(u)u(o)}for(e&&e(n);s<a.length;s++)i=a[s],o.o(t,i)&&t[i]&&t[i][0](),t[i]=0},n=self.webpackChunkNRBA=self.webpackChunkNRBA||[];n.forEach(e.bind(null,0)),n.push=e.bind(null,n.push.bind(n))}();var i={};return function(){"use strict";o.r(i);var t=o(9034),e=o(4408),n=window,r=n.document;function a(t){"complete"===r.readyState&&t()}function c(t){a(t),r.addEventListener?n.addEventListener("load",t,(0,e.m)(!1)):n.attachEvent("onload",t)}function u(t){a(t),r.addEventListener?r.addEventListener("DOMContentLoaded",t,(0,e.m)(!1)):r.attachEvent("onreadystatechange",a)}var s=o(1776);function f(){f=function(){return t};var t={},e=Object.prototype,n=e.hasOwnProperty,r="function"==typeof Symbol?Symbol:{},o=r.iterator||"@@iterator",i=r.asyncIterator||"@@asyncIterator",a=r.toStringTag||"@@toStringTag";function c(t,e,n){return Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,n){return t[e]=n}}function u(t,e,n,r){var o=e&&e.prototype instanceof l?e:l,i=Object.create(o.prototype),a=new j(r||[]);return i._invoke=function(t,e,n){var r="suspendedStart";return function(o,i){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===o)throw i;return P()}for(n.method=o,n.arg=i;;){var a=n.delegate;if(a){var c=x(a,n);if(c){if(c===d)continue;return c}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var u=s(t,e,n);if("normal"===u.type){if(r=n.done?"completed":"suspendedYield",u.arg===d)continue;return{value:u.arg,done:n.done}}"throw"===u.type&&(r="completed",n.method="throw",n.arg=u.arg)}}}(t,n,a),i}function s(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var d={};function l(){}function v(){}function p(){}var h={};c(h,o,(function(){return this}));var g=Object.getPrototypeOf,y=g&&g(g(_([])));y&&y!==e&&n.call(y,o)&&(h=y);var m=p.prototype=l.prototype=Object.create(h);function b(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function w(t,e){function r(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var f=u.arg,d=f.value;return d&&"object"==typeof d&&n.call(d,"__await")?e.resolve(d.__await).then((function(t){r("next",t,a,c)}),(function(t){r("throw",t,a,c)})):e.resolve(d).then((function(t){f.value=t,a(f)}),(function(t){return r("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,n){function i(){return new e((function(e,o){r(t,n,e,o)}))}return o=o?o.then(i,i):i()}}function x(t,e){var n=t.iterator[e.method];if(void 0===n){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,x(t,e),"throw"===e.method))return d;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return d}var r=s(n,t.iterator,e.arg);if("throw"===r.type)return e.method="throw",e.arg=r.arg,e.delegate=null,d;var o=r.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,d):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,d)}function O(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function j(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(O,this),this.reset(!0)}function _(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,i=function e(){for(;++r<t.length;)if(n.call(t,r))return e.value=t[r],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:P}}function P(){return{value:void 0,done:!0}}return v.prototype=p,c(m,"constructor",p),c(p,"constructor",v),v.displayName=c(p,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===v||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,p):(t.__proto__=p,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},b(w.prototype),c(w.prototype,i,(function(){return this})),t.AsyncIterator=w,t.async=function(e,n,r,o,i){void 0===i&&(i=Promise);var a=new w(u(e,n,r,o),i);return t.isGeneratorFunction(n)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},b(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var n in t)e.push(n);return e.reverse(),function n(){for(;e.length;){var r=e.pop();if(r in t)return n.value=r,n.done=!1,n}return n.done=!0,n}},t.values=_,j.prototype={constructor:j,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&n.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(n,r){return a.type="throw",a.arg=t,e.next=n,r&&(e.method="next",e.arg=void 0),!!r}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return r("end");if(i.tryLoc<=this.prev){var c=n.call(i,"catchLoc"),u=n.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return r(i.catchLoc,!0);if(this.prev<i.finallyLoc)return r(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return r(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return r(i.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var o=this.tryEntries[r];if(o.tryLoc<=this.prev&&n.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,d):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),d},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),E(n),d}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var o=r.arg;E(n)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:_(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=void 0),d}},t}function d(t,e,n,r,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void n(t)}c.done?e(u):Promise.resolve(u).then(r,o)}var l=0;function v(t){var e;(e=f().mark((function e(){var n,r;return f().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!l++){e.next=2;break}return e.abrupt("return");case 2:return e.prev=2,e.next=5,o.e(552).then(o.bind(o,5552));case 5:return n=e.sent,r=n.aggregator,e.next=9,r(t);case 9:e.next=15;break;case 11:e.prev=11,e.t0=e.catch(2),console.error("Failed to successfully load all aggregators. Aborting...\n",e.t0),s.ee.abort();case 15:case"end":return e.stop()}}),e,null,[[2,11]])})),function(){var t=this,n=arguments;return new Promise((function(r,o){var i=e.apply(t,n);function a(t){d(i,r,o,a,c,"next",t)}function c(t){d(i,r,o,a,c,"throw",t)}a(void 0)}))})()}var p=o(8539),h=o.n(p),g=o(1424),y=o(1220),m=o(441),b=o(7361),w=o(357),x=o(6959);var O=o(1476),E=o(5955),j={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},_={};var P=!1;var A=o(6972),k=o(1793),L=o(5023);function S(t,e){return S=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},S(t,e)}var T,C,I,R=function(t){var e,n;function r(e){var n;return n=t.call(this,e)||this,(0,k.v)(e),(0,A.B)(e,"firstbyte",(0,x.yf)()),c((function(){return n.measureWindowLoaded()})),u((function(){return n.measureDomContentLoaded()})),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,S(e,n);var o=r.prototype;return o.measureWindowLoaded=function(){var t=(0,x.zO)();(0,A.B)(this.agentIdentifier,"onload",t+(0,x.os)()),(0,b.p)("timing",["load",t],void 0,void 0,this.ee)},o.measureDomContentLoaded=function(){(0,A.B)(this.agentIdentifier,"domContent",(0,x.zO)()+(0,x.os)())},r}(L.W);void 0!==document.hidden?(T="hidden",C="visibilitychange",I="visibilityState"):void 0!==document.msHidden?(T="msHidden",C="msvisibilitychange"):void 0!==document.webkitHidden&&(T="webkitHidden",C="webkitvisibilitychange",I="webkitVisibilityState");var M=o(2085);function N(t,e){return N=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},N(t,e)}var D=function(t){var n,r;function o(n){var r,o;if((r=t.call(this,n)||this).pageHiddenTime="hidden"===document.visibilityState?-1:1/0,r.performanceObserver,r.lcpPerformanceObserver,r.clsPerformanceObserver,r.fiRecorded=!1,!r.isEnabled())return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r);if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){r.performanceObserver=new PerformanceObserver((function(){var t;return(t=r).perfObserver.apply(t,arguments)}));try{r.performanceObserver.observe({entryTypes:["paint"]})}catch(t){}r.lcpPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).lcpObserver.apply(t,arguments)}));try{r.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(t){}r.clsPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).clsObserver.apply(t,arguments)}));try{r.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(t){}}if("addEventListener"in document){r.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((function(t){document.addEventListener(t,(function(){var t;return(t=r).captureInteraction.apply(t,arguments)}),(0,e.m)(!1))}))}return o=function(){var t;return(t=r).captureVisibilityChange.apply(t,arguments)},"addEventListener"in document&&C&&document.addEventListener(C,(function(){I&&document[I]?o(document[I]):document[T]?o("hidden"):o("visible")}),(0,e.m)(!1)),r}r=t,(n=o).prototype=Object.create(r.prototype),n.prototype.constructor=n,N(n,r);var i=o.prototype;return i.isEnabled=function(){return!1!==(0,O.Mt)(this.agentIdentifier,"page_view_timing.enabled")},i.perfObserver=function(t,e){var n=this;t.getEntries().forEach((function(t){"first-paint"===t.name?(0,b.p)("timing",["fp",Math.floor(t.startTime)],void 0,void 0,n.ee):"first-contentful-paint"===t.name&&(0,b.p)("timing",["fcp",Math.floor(t.startTime)],void 0,void 0,n.ee)}))},i.lcpObserver=function(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(this.pageHiddenTime<r.startTime)return;var o=[r],i=this.addConnectionAttributes({});i&&o.push(i),(0,b.p)("lcp",o,void 0,void 0,this.ee)}},i.clsObserver=function(t){var e=this;t.getEntries().forEach((function(t){t.hadRecentInput||(0,b.p)("cls",[t],void 0,void 0,e.ee)}))},i.addConnectionAttributes=function(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t},i.captureInteraction=function(t){if(t instanceof M.Y.EV&&!this.fiRecorded){var e=Math.round(t.timeStamp),n={type:t.type};this.addConnectionAttributes(n),e<=(0,x.zO)()?n.fid=(0,x.zO)()-e:e>(0,x.os)()&&e<=Date.now()?(e-=(0,x.os)(),n.fid=(0,x.zO)()-e):e=(0,x.zO)(),this.fiRecorded=!0,(0,b.p)("timing",["fi",e,n],void 0,void 0,this.ee)}},i.captureVisibilityChange=function(t){"hidden"===t&&(this.pageHiddenTime=(0,x.zO)(),(0,b.p)("pageHide",[this.pageHiddenTime],void 0,void 0,this.ee))},o}(L.W),q=o(3350),B="React",z="Angular",G="AngularJS",H="Backbone",F="Ember",V="Vue",Z="Meteor",U="Zepto",X="Jquery";function Q(){var t=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var t=document.querySelectorAll("body > div"),e=0;e<t.length;e++)if(Object.keys(t[e]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(t){return!1}})()&&t.push(B),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(t){return!1}}()&&t.push(G),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(t){return!1}}()&&t.push(z),window.Backbone&&t.push(H),window.Ember&&t.push(F),window.Vue&&t.push(V),window.Meteor&&t.push(Z),window.Zepto&&t.push(U),window.jQuery&&t.push(X)}catch(t){}return t}var W=o(7299),K=o(603),Y=o(158);function J(t,e){return J=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},J(t,e)}var $=function(t){var e,n;function r(e){var n;return(n=t.call(this,e)||this).singleChecks(),(0,q.X)("record-supportability",(function(){var t;return(t=n).recordSupportability.apply(t,arguments)}),void 0,n.ee),(0,q.X)("record-custom",(function(){var t;return(t=n).recordCustom.apply(t,arguments)}),void 0,n.ee),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,J(e,n);var o=r.prototype;return o.recordSupportability=function(t,e){var n=["sm",t,{name:t},e];return(0,b.p)("storeMetric",n,null,void 0,this.ee),n},o.recordCustom=function(t,e){var n=["cm",t,{name:t},e];return(0,b.p)("storeEventMetrics",n,null,void 0,this.ee),n},o.singleChecks=function(){var t=this;this.recordSupportability("Generic/Version/"+Y.q+"/Detected"),u((function(){Q().forEach((function(e){t.recordSupportability("Framework/"+e+"/Detected")}))})),W.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),W.T.supportabilityMetricSent=!0);var e=(0,K.$c)(this.agentIdentifier);e.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),e.length>0&&!(0,K.Ng)(e)&&this.recordSupportability("Generic/Obfuscate/Invalid")},r}(L.W),tt=o(847);new Promise((function(e,n){if(P)e(P);else{var r=(0,g.gG)();try{(0,m.L)(t.Z,r.info),(0,O.Dg)(t.Z,r.init),function(t,e){if(!t)throw new Error("All loader-config objects require an agent identifier!");_[t]=new E.I(e,j),(0,g.Qy)(t,_[t],"loader_config")}(t.Z,r.loader_config),(0,y.s)(t.Z,{}),function(t){var e=(0,g.fP)(),n=s.ee.get(t),r=n.get("tracer"),o="api-",i="api-ixn-";function a(){}(0,w.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(t,n){e[n]=u(o,n,!0,"api")})),e.addPageAction=u(o,"addPageAction",!0),e.setCurrentRouteName=u(o,"routeName",!0),e.setPageViewName=function(e,n){if("string"==typeof e)return"/"!==e.charAt(0)&&(e="/"+e),(0,y.O)(t).customTransaction=(n||"http://custom.transaction")+e,u(o,"setPageViewName",!0,"api")()},e.setCustomAttribute=function(e,n){var r,i=(0,m.C)(t);return(0,m.L)(t,Object.assign({},i,{jsAttributes:Object.assign({},i.jsAttributes,(r={},r[e]=n,r))})),u(o,"setCustomAttribute",!0,"api")()},e.interaction=function(){return(new a).get()};var c=a.prototype={createTracer:function(t,e){var o={},i=this,a="function"==typeof e;return(0,b.p)("api-ixn-tracer",[(0,x.zO)(),t,o],i,void 0,n),function(){if(r.emit((a?"":"no-")+"fn-start",[(0,x.zO)(),i,a],o),a)try{return e.apply(this,arguments)}catch(t){throw r.emit("fn-err",[arguments,this,"string"==typeof t?new Error(t):t],o),t}finally{r.emit("fn-end",[(0,x.zO)()],o)}}}};function u(t,e,r,o){return function(){return(0,b.p)("record-supportability",["API/"+e+"/called"],void 0,void 0,n),(0,b.p)(t+e,[(0,x.zO)()].concat(h()(arguments)),r?null:this,o,n),r?void 0:this}}(0,w.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(t,e){c[e]=u(i,e)})),e.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),(0,b.p)("record-supportability",["API/noticeError/called"],void 0,void 0,n),(0,b.p)("err",[t,(0,x.zO)(),!1,e],void 0,void 0,n)}}(t.Z),e(P=!0)}catch(t){n(t)}}})).then((function(){var e,n,r,o=(0,tt.K)(t.Z);o.page_view_event&&new R(t.Z),o.page_view_timing&&new D(t.Z),o.metrics&&new $(t.Z),e="lite",n?setTimeout((function(){return v(e)}),r||1e3):c((function(){return v(e)}))}))}(),i}()}));</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/images/favicon.ico" />
+	<meta name="msapplication-TileColor" content="#A51C30">
+	<meta name="msapplication-TileImage" content="https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/images/ms/ms-tile-icon.png">
+	<link rel="apple-touch-icon" href="https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/images/ios/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/images/ios/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/images/ios/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/images/ios/touch-icon-ipad-retina.png">
+	<meta property="fb:app_id" content="1019010578192159" />
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Academic Departments, Divisions and Centers | Harvard T.H. Chan School of Public Health</title>
+<meta name='robots' content='max-image-preview:large' />
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="1_sb_hH0QEPEQlTwo3_koSmHz27DaM08aYufbfeqLHk" />
+<meta name="msvalidate.01" content="4D1883664D3F0A935C792AFD5483C7B5" />
+<link rel='dns-prefetch' href='//www.hsph.harvard.edu' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Harvard T.H. Chan School of Public Health &raquo; Feed" href="https://www.hsph.harvard.edu/feed/" />
+<link rel="alternate" type="text/calendar" title="Harvard T.H. Chan School of Public Health &raquo; iCal Feed" href="https://www.hsph.harvard.edu/events/?ical=1" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.hsph.harvard.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='tribe-events-pro-mini-calendar-block-styles-css' href='https://www.hsph.harvard.edu/wp-content/plugins/events-calendar-pro/src/resources/css/tribe-events-pro-mini-calendar-block.min.css?ver=6.0.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.hsph.harvard.edu/wp-includes/css/dist/block-library/style.min.css?ver=6.1' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='mediaelement-css' href='https://www.hsph.harvard.edu/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://www.hsph.harvard.edu/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.hsph.harvard.edu/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='hsph-protected-file-front-style-css' href='https://www.hsph.harvard.edu/wp-content/plugins/plugin-harvard-key/assets/css/hsph-pin-file-protect.css?ver=2.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='hsph-plugin-multisite-tweaks-styles-css' href='https://www.hsph.harvard.edu/wp-content/plugins/plugin-multisite-tweaks/assets/css/hsph-plugin-multisite-tweaks.css?ver%5BVersion%5D=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='hsph_page_elements_styles-css' href='https://www.hsph.harvard.edu/wp-content/plugins/plugin-page-elements/assets/css/plugin-page-elements.css?ver=1.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='hsph-plugin-tagging-topics-pages-css' href='https://www.hsph.harvard.edu/wp-content/plugins/plugin-tagging/assets/css/topics.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='hsph-table-sortable-css-css' href='https://www.hsph.harvard.edu/wp-content/plugins/plugin-tinymce-tweaks/assets/css/hsph-table-sortable.css?ver=1.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://www.hsph.harvard.edu/wp-includes/css/dashicons.min.css?ver=6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='hsph-bootstrap-css' href='https://www.hsph.harvard.edu/wp-content/plugins/plugin-design-system/assets/css/hsph-bootstrap-no-conflict.css?ver=1.4.11' type='text/css' media='all' />
+<link rel='stylesheet' id='hsph-ui-shortcodes-style-css' href='https://www.hsph.harvard.edu/wp-content/plugins/plugin-ui-shortcodes/assets/css/hsph-ui-shortcodes.css?ver=1.6.11' type='text/css' media='all' />
+<link rel='stylesheet' id='hsph-style-css' href='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/style.css?ver=1.3.96' type='text/css' media='all' />
+<link rel='stylesheet' id='hsph-home-style-css' href='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016-child-home/style.css?ver=4.0.14' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='hsph-home-ie8-css' href='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016-child-home/css/ie8.css?ver=4.0.14' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='hsph-fonts-css' href='https://fonts.googleapis.com/css?family=Merriweather%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext&#038;ver=1.3.96' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css' href='https://www.hsph.harvard.edu/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='hsph-people-research-css' href='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/css/people-research.css?ver=1.3.96' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='hsph-ie-css' href='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/css/ie9.css?ver=1.3.96' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='hsph-ie8-css' href='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/css/ie8.css?ver=1.3.96' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='hsph-fontawesome-css' href='https://www.hsph.harvard.edu/wp-content/plugins/plugin-design-system/assets/css/hsph-fontawesome.css?ver=1.4.11' type='text/css' media='all' />
+<link rel='stylesheet' id='hsph-sharing-buttons-styles-css' href='https://www.hsph.harvard.edu/wp-content/plugins/plugin-social//assets/css/hsph-sharing-buttons.css?ver%5BVersion%5D=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css' href='https://www.hsph.harvard.edu/wp-content/plugins/jetpack/css/jetpack.css?ver=11.4' type='text/css' media='all' />
+<script type='text/javascript' id='wp-sentry-browser-js-extra'>
+/* <![CDATA[ */
+var wp_sentry = {"dsn":"https:\/\/1cf5486bca3949988f6ee887a807ff7c@o259296.ingest.sentry.io\/1856593","tracesSampleRate":"0","environment":"prod","release":"v6.1.0.6","context":{"tags":{"wordpress":"6.1","language":"en-US"}},"blacklistUrls":["https:\/\/theforum.sph.harvard.edu\/","https:\/\/theforum.sph.harvard.edu\/","https:\/\/p3.3playmedia.com\/","https:\/\/static.3playmedia.com\/","http:\/\/p3.3playmedia.com\/","http:\/\/static.3playmedia.com\/","https:\/\/www.hsph.harvard.edu\/voices\/","regex:3playmedia","regex:theforum\\.sph\\.harvard","regex:theforum\\.sph\\.harvard","harvard\\\\.edu\\\/voices\\\/","harvard\\.edu\\\/voices\\\/"],"denyUrls":["https:\/\/theforum.sph.harvard.edu\/","https:\/\/theforum.sph.harvard.edu\/","https:\/\/p3.3playmedia.com\/","https:\/\/static.3playmedia.com\/","http:\/\/p3.3playmedia.com\/","http:\/\/static.3playmedia.com\/","https:\/\/www.hsph.harvard.edu\/voices\/","regex:theforum\\.sph\\.harvard","regex:theforum\\.sph\\.harvard","harvard\\\\.edu\\\/voices\\\/","harvard\\.edu\\\/voices\\\/"]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/plugins/wp-sentry-integration/public/wp-sentry-browser.min.js?ver=5.1.0' id='wp-sentry-browser-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/plugins/jquery-updater/js/jquery-3.6.1.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/plugins/jquery-updater/js/jquery-migrate-3.4.0.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-includes/js/jquery/ui/tabs.min.js?ver=1.13.2' id='jquery-ui-tabs-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-includes/js/jquery/ui/accordion.min.js?ver=1.13.2' id='jquery-ui-accordion-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/plugins/plugin-ui-shortcodes/assets/js/hsph-ui-shortcodes.js?ver=1.6.11' id='hsph-ui-shortcodes-scripts-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/js/typekit.js?ver=1.3.96' id='hsph-typekit-js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js?ver=3.7.3' id='hsph-html5-js'></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="https://www.hsph.harvard.edu/wp-json/" /><link rel="alternate" type="application/json" href="https://www.hsph.harvard.edu/wp-json/wp/v2/pages/111354154646" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.hsph.harvard.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.hsph.harvard.edu/wp-includes/wlwmanifest.xml" />
+<link rel="canonical" href="https://www.hsph.harvard.edu/departments/" />
+<link rel='shortlink' href='https://www.hsph.harvard.edu/?p=111354154646' />
+<link rel="alternate" type="application/json+oembed" href="https://www.hsph.harvard.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hsph.harvard.edu%2Fdepartments%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.hsph.harvard.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hsph.harvard.edu%2Fdepartments%2F&#038;format=xml" />
+<!-- Google Analytics -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			
+	ga( 'create', 'UA-16396394-1', 'hsph.harvard.edu', 'trackern1');
+	ga( 'trackern1.require', 'displayfeatures');
+	ga( 'trackern1.require', 'linkid');
+	ga( 'trackern1.set', 'dimension1', 'signed_out' );
+	ga( 'trackern1.set', 'dimension2', 'none' );
+	ga( 'trackern1.send', 'pageview');
+
+
+	ga( 'create', ' UA-44468534-1', 'hsph.harvard.edu', 'trackern2');
+	ga( 'trackern2.require', 'displayfeatures');
+	ga( 'trackern2.require', 'linkid');
+	ga( 'trackern2.set', 'dimension1', 'signed_out' );
+	ga( 'trackern2.set', 'dimension2', 'none' );
+	ga( 'trackern2.send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+		
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XL6K');</script>
+<!-- End Google Tag Manager -->
+		
+		<meta http-equiv="content-language" content="en-us" />
+		<meta name="copyright" content="Copyright (c) 2022 The President and Fellows of Harvard College" /><meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://www.hsph.harvard.edu"><link rel="alternate" href="https://www.hsph.harvard.edu/wp-json/tribe/events/v1/" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Academic Departments, Divisions and Centers" />
+<meta property="og:url" content="https://www.hsph.harvard.edu/departments/" />
+<meta property="og:description" content="Academic Departments Divisions Division of Biological Sciences Division of Policy Translation and Leadership Development Research Centers The School has established several centers to advance resea…" />
+<meta property="article:published_time" content="2022-06-21T00:24:42+00:00" />
+<meta property="article:modified_time" content="2022-11-03T17:08:21+00:00" />
+<meta property="og:site_name" content="Harvard T.H. Chan School of Public Health" />
+<meta property="og:image" content="https://cdn1.sph.harvard.edu/social-share.jpg" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@harvardchansph" />
+<meta name="twitter:text:title" content="Academic Departments, Divisions and Centers" />
+<meta name="twitter:card" content="summary" />
+
+<!-- End Jetpack Open Graph Tags -->
+		<style type="text/css" id="wp-custom-css">
+			
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event.cat_heritage-identity {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e8f1f7;
+    border-radius: 0.1875rem;
+    width: 100%;
+    margin-left: 0;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event.cat_heritage-identity p {
+    margin-bottom: 0.125rem;
+}
+
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event.cat_heritage-identity .tribe-events-calendar-list__event-datetime-wrapper {
+    display: inline-block;
+    margin: 0 8px 0 0;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event.cat_heritage-identity .tribe-events-calendar-list__event-details {
+    width: 100%;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event.cat_heritage-identity .tribe-events-calendar-list__event-featured-image-wrapper  {
+    display: none;
+}
+
+
+/*20220121 Temporary youtube embed fix*/
+
+.page-template-event-series .embed-responsive-4by3::before, 
+.tribe-events-single-event-description .hsph-bootstrap  .embed-responsive-4by3::before {
+  padding-top: 56.25% !important; }
+
+/*MOVE TO SHEETS*/
+.hsph-bootstrap .tribe-related-events-thumbnail .embed-responsive {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1872px) {
+.post-type-archive-tribe_events .site-main {
+    margin: 0 auto;
+}
+}
+
+.hsph-bootstrap .faculty-profile .card .related-links a {
+    display: inline-block;
+}
+
+
+.hsph-bootstrap .embed-responsive {
+    position: relative;    
+    display: block;    
+    width: 100%;    
+    padding: 0;    
+    overflow: hidden;    
+    margin-bottom: 1.75rem;
+    }
+
+
+@media screen and (min-width: 700px) {
+	
+	/*profile bg fix*/
+	
+	.faculty-profile-background .jumbotron-cover {
+    background-size: 100% !important;
+    margin: -180px;
+    -webkit-filter: blur(90px);
+    -moz-filter: blur(90px);
+    -o-filter: blur(90px);
+    -ms-filter: blur(90px);
+    filter: blur(90px);
+    height: 280%;
+    background-position-y: bottom;
+}
+	
+/*style.css 301
+ * Increased contrast on main carousel gradient*/	
+	
+	
+#main-carousel .home_carousel_full_width_bottom.overlay .main-carousel-overlay, #main-carousel-takeover .primary-slide .home_carousel_full_width_bottom.overlay .main-carousel-overlay {
+    background: linear-gradient( rgba(0,0,0,0), rgba( 0, 0, 0, 0.25 ) 59%, rgba( 0, 0, 0, 1 ) );
+    background: linear-gradient( rgba(0,0,0,0), rgba( 0, 0, 0, 0.25 ) 59%, rgba( 0, 0, 0, 1 ) );
+    background: linear-gradient( rgba(0,0,0,0), rgba( 0, 0, 0, 0.25 ) 59%, rgba( 0, 0, 0, 1 ) );
+    background: linear-gradient( rgba(0,0,0,0), rgba( 0, 0, 0, 0.25 ) 59%, rgba( 0, 0, 0, 1 ) );
+}
+
+}
+
+/*above to be added in later style pass*/
+
+/*harvard chan studio events tag-logo*/
+
+article.tribe-events-calendar-list__event.event_series-studio:not(.event_series-onthebrink) .tribe-events-calendar-list__event-description p {
+    margin-bottom: 0.75rem;
+}
+
+
+article.tribe-events-calendar-list__event.event_series-studio:not(.event_series-onthebrink) .tribe-events-calendar-list__event-description:after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 30px;
+    background-image: url("https://www.hsph.harvard.edu/wp-content/uploads/2022/01/HarvardChanStudio_logo_iso_RGB-s.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.event_series-studio:not(.event_series-onthebrink) .post-thumbnail:after {
+    content: "";
+    display: inline-block;
+    background-color: #292d33;
+    width: 100%;
+    height: 60px;
+    margin-top: -15px;
+    background-image: url("https://www.hsph.harvard.edu/wp-content/uploads/2022/01/HarvardChanStudio_logo_iso_RGB-s_KO.svg");
+    background-size: 115px;
+    background-repeat: no-repeat;
+    background-position: top 13px right 15px;
+}
+
+
+/*end harvard chan studio events tag-logo*/
+
+
+
+/*highlighted-menu-item utility links*/
+
+#site-utility-menu li.highlighted-menu-item a {
+    font-weight: bold;
+    color: #a51c30;
+}
+
+
+/*announcement bar
+ * 
+ * GM: These can be moved to main stylesheet*/
+
+.alert-announcement-header * {
+    color: #fff !important;
+}
+
+.alert-announcement-header h1,
+.alert-announcement-header h2,
+.alert-announcement-header h3,
+.alert-announcement-header h4,
+.alert-announcement-header h5,
+.alert-announcement-header h6 {
+    margin-bottom: 0;
+    line-height: 1.25;
+}
+
+.alert-announcement-header h3 {
+	font-size: 1.5rem;
+}
+
+.hsph-bootstrap .alert-announcement-header .btn-crimson {
+    box-shadow: none;
+}
+
+.hsph-bootstrap .bg-dark {
+    background-color: #292d33 !important; 
+	/*
+	 * GM update bootstrap's dark to the above color $gray-700*/
+}
+
+#main-carousel, #main-carousel-takeover {
+    background: #292d33;
+}
+
+.alert-announcement-header {
+    box-shadow: inset 0 -1px 2px 0 rgba(21, 23, 26, 0.5), inset 0 -1px 3px 1px rgba(21, 23, 26, 0.3);
+}
+
+/*END MOVE TO SHEETS*/
+
+
+/*studio temp page jan 2022*/
+
+.page-id-111354151841 .site-content {
+    margin-top: 30px;
+}
+
+.page-id-111354151841 .site-content #primary .entry-content h3 {
+    margin-bottom: 0px;
+}
+
+/*LEAVE IN CUSTOMIZER*/
+
+/*announcement bar temporary
+ * GM: Keep this in customizer, will need to remove when the racism announcement bar is done*/
+
+.alert-announcement-header {
+    position:relative;
+    background: url('https://cdn1.sph.harvard.edu/wp-content/uploads/2020/07/Racism-health-announcement-bar-image2.jpg') no-repeat left;
+    background-position: 0 17%;
+    background-size: 500px;
+		z-index: 3 !important;
+}
+
+
+/*END LEAVE IN CUSTOMIZER*/
+
+
+/*image alignment temp fix*/
+
+
+@media screen and (max-width: 920px) {
+
+img.alignright,
+img.alignleft {
+    width: 50%;
+}
+
+}
+
+@media screen and (max-width: 720px) {
+
+img.alignright,
+img.alignleft {
+    width: 100%;
+}
+
+}
+
+
+/*fixes widget spacing, gotta figure this out site-wide eventually*/
+
+/* Faculty Profiles - tablist hover */
+.faculty-profile-overview-section .nav-pills .nav-link:hover:not(.active) {
+	color: #1d2024;
+	background-color: #dcdce0;
+	border-color: #d5d5da;
+}
+
+
+/* Search page /search/ custom styles */
+
+.entry-content .gsc-search-box [class|="gsc"] {
+	line-height: .9;
+}
+
+.entry-content [class|="gsc"], 
+.entry-content [class|="gsc"]:before, 
+.entry-content [class|="gsc"]:after {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.gsc-adBlock { display: none !important; }
+
+.page-id-111354155115 #main {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.page-id-111354155115 #main h1.entry-title {
+	font-weight: 700;
+	font-size: 1.875rem;
+  line-height: 1.225;
+	color: #292d33;
+}
+.page-id-111354155115 #main .gsc-search-box td,
+.page-id-111354155115 #main .gsc-search-box tr,
+.page-id-111354155115 #main .gsc-search-box th {
+	border: 0 none;
+}
+
+.page-id-111354155115 #main .gsib_a {
+	padding: 5px 10px;
+}
+
+.page-id-111354155115 #main .gsc-control-cse {
+	padding: 0;
+}
+
+
+.page-id-111354155115 #main .responsive-table{
+	overflow-x: initial;
+}
+
+.page-id-111354155115 #main .responsive-table table td{
+	width: initial !important;
+}
+
+.page-id-111354155115 #main .responsive-table table.gsc-search-box td.gsc-search-button{
+	width: 7% !important;
+}		</style>
+		<style id="kirki-inline-styles"></style></head>
+
+<body class="page-template-default page page-id-111354154646 tribe-no-js no-sidebar tribe-theme-theme-main-2016">
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId      : '1019010578192159',
+			xfbml      : true,
+			version    : 'v2.7'
+		});
+		FB.AppEvents.logPageView();
+	};
+
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="wrapper" id="wrapper">
+	<div id="navbar" class="navbar">
+		<div id="nav-utility-menu" class="nav-utility-menu"></div>
+		<div id="nav-primary-menu" class="nav-primary-menu"></div>
+		<div id="nav-audience-menu" class="nav-audience-menu"></div>
+	</div>
+			<button id="main-menu-toggle" class="main-menu-toggle">Menu</button>
+		<button id="main-menu-caption" class="main-menu-caption"><span id="main-menu-caption-text" class="main-menu-caption-text">Close Menu</span></button>
+		<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+				<header id="masthead" class="site-header" role="banner">
+			<div id="audience-bar">
+									<div id="site-audience-menu" class="site-audience-menu">
+						<span class="information-for">Information For:</span>
+						<nav id="audience-navigation" class="audience-navigation" aria-label="Audience Menu">
+							<div class="menu-audience-menu-container"><ul id="menu-audience-menu" class="hsph-audience-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113411"><a href="/admissions/">Prospective Students</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113412"><a href="/current-students/">Current Students</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113413"><a href="https://alumni.sph.harvard.edu">Alumni</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113414"><a href="/faculty-staff/">Faculty &#038; Staff</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113415"><a href="/giving/">Friends &#038; Supporters</a></li>
+</ul></div>						</nav><!-- .main-navigation -->
+					</div><!-- .site-header-menu -->
+								<div id="index-search">
+											<div id="site-atoz-menu" class="site-atoz-menu">
+							<nav id="atoz-navigation" class="atoz-navigation" aria-label="A to Z Menu">
+								<div class="menu-a-to-z-container"><ul id="menu-a-to-z" class="hsph-atoz-menu"><li id="menu-item-111354113481" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113481"><a href="https://www.hsph.harvard.edu/atoz/">A to Z index</a></li>
+</ul></div>							</nav><!-- .main-navigation -->
+
+						</div><!-- .site-header-menu -->
+										<div id="search">
+						<form role="search" method="get" class="search-form" action="/search">
+							<label>
+								<span class="screen-reader-text">Search for:</span>
+								<input type="search" class="search-field" placeholder="Search&hellip;" value="" name="q" id="q" title="Search for:" />
+							</label>
+							<button type="submit" value="Search" aria-label="Search for:" class="search-submit"> </button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="site-header-main">
+				<div class="site-branding">
+					<div class="site-title"><a href="https://www.hsph.harvard.edu/" rel="home">Harvard T.H. Chan School of Public Health</a></div>
+				</div><!-- .site-branding -->
+									<div id="site-utility-menu" class="site-utility-menu">
+						<nav id="utility-navigation" class="utility-navigation" aria-label="Utility Menu">
+							<div class="menu-quicklinks-menu-container"><ul id="menu-quicklinks-menu" class="hsph-utility-menu"><li id="menu-item-111354113419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113419"><a href="/email/">Email</a></li>
+<li id="menu-item-111354113417" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113417"><a href="/people/">People</a></li>
+<li id="menu-item-111354113422" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113422"><a href="/academics/">Departments</a></li>
+<li id="menu-item-111354113416" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113416"><a href="https://www.hsph.harvard.edu/events/">Calendar</a></li>
+<li id="menu-item-111354113418" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113418"><a href="/employment/">Careers</a></li>
+<li id="menu-item-111354113421" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113421"><a title="Manage Student Information" href="https://my.harvard.edu">my.harvard</a></li>
+<li id="menu-item-111354113420" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113420"><a href="https://www.hsph.harvard.edu/giving/">Giving</a></li>
+</ul></div>						</nav><!-- .main-navigation -->
+
+					</div><!-- .site-header-menu -->
+							</div><!-- .site-header-main -->
+							<div id="site-header-menu" class="site-header-menu">
+					<!-- Start Imodules Primary Nav Scrape -->
+					<nav id="site-navigation" class="main-navigation" aria-label="Primary Menu">
+						<div class="menu-main-navigation-container"><ul id="menu-main-navigation" class="hsph-primary-menu"><li id="menu-item-111354113405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113405"><a href="/about/">About</a></li>
+<li id="menu-item-111354113406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113406"><a href="/faculty-research/">Faculty &#038; Research</a></li>
+<li id="menu-item-111354113407" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113407"><a href="/admissions/">Admissions &#038; Aid</a></li>
+<li id="menu-item-111354113408" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-111354113408"><a href="/departments/" aria-current="page">Academics</a></li>
+<li id="menu-item-111354113409" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113409"><a href="/ecpe/">Executive/Continuing Ed</a></li>
+<li id="menu-item-111354113410" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113410"><a href="/news/">News</a></li>
+</ul></div>					</nav><!-- .main-navigation -->
+					<!-- End Imodules Primary Nav Scrape -->
+				</div><!-- .site-header-menu -->
+					</header><!-- .site-header -->
+		
+				<div id="content" class="site-content">
+							<div class="page-header">
+					<div class="page-title" >
+						Harvard T.H. Chan School of Public Health					</div>
+				</div>
+								<div id="breadcrumbs" class="hsph-site-title-present">
+					<!-- Breadcrumb NavXT 7.1.0 -->
+<a title="Go to Harvard T.H. Chan School of Public Health." href="https://www.hsph.harvard.edu" class="main-home"></a> &gt; Academic Departments, Divisions and Centers				</div>
+				
+
+<div id="primary" class="content-area ">
+	
+<div id="left-nav" class="left-nav" role="navigation">
+	<div class="section-title">
+		<a href="https://www.hsph.harvard.edu/" rel="home">Harvard T.H. Chan School of Public Health</a>
+		<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Menu</span></button>
+	</div>
+	<div class="left-collapse-container">
+		<div id="left-search">
+		
+			<form role="search" method="get" class="search-form" action="https://www.hsph.harvard.edu/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search this section" value="" name="s" title="Search for:" />
+				</label>
+				<button type="submit" value="Search" aria-label="Search for:" class="search-submit"> </button>
+			</form>
+					</div>
+					<div id="site-left-menu" class="site-left-menu">
+				<nav id="site-left-nav" class="left-navigation" aria-label="Section Menu">
+					<div class="menu-left-side-menu-container"><ul id="menu-left-side-menu" class="hsph-lefthand-menu"><li id="menu-item-111354154638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-111354154638"><a href="https://www.hsph.harvard.edu/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-111354154644" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154644"><a href="https://www.hsph.harvard.edu/about/mission/">Mission</a></li>
+	<li id="menu-item-111354154643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154643"><a href="https://www.hsph.harvard.edu/about/land-acknowledgment/">Land Acknowledgment</a></li>
+	<li id="menu-item-111354154642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154642"><a href="https://www.hsph.harvard.edu/about/history-and-core-values/">History and Core Values</a></li>
+	<li id="menu-item-111354154641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154641"><a href="https://www.hsph.harvard.edu/about/public-health-and-medicine/">Public Health and Medicine</a></li>
+	<li id="menu-item-111354154640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154640"><a href="https://www.hsph.harvard.edu/about/selected-accomplishments/">Selected Accomplishments</a></li>
+	<li id="menu-item-111354154639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154639"><a href="https://www.hsph.harvard.edu/about/global-leadership/">Global Leadership</a></li>
+	<li id="menu-item-111354154645" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354154645"><a href="https://www.hsph.harvard.edu/centennial/">Centennial</a></li>
+</ul>
+</li>
+<li id="menu-item-111354154661" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354154661"><a href="https://www.hsph.harvard.edu/deans-office/">Office of the Dean</a></li>
+<li id="menu-item-111354155276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354155276"><a href="https://www.hsph.harvard.edu/about/administrative-offices/">Administrative Offices</a></li>
+<li id="menu-item-111354154648" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-111354154646 current_page_item menu-item-111354154648"><a href="https://www.hsph.harvard.edu/departments/" aria-current="page">Academic Departments, Divisions and Centers</a></li>
+<li id="menu-item-111354154676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-111354154676"><a href="https://www.hsph.harvard.edu/key-facts/">Key Facts</a>
+<ul class="sub-menu">
+	<li id="menu-item-111354154681" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154681"><a href="https://www.hsph.harvard.edu/key-facts/faculty/">Faculty</a></li>
+	<li id="menu-item-111354154680" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154680"><a href="https://www.hsph.harvard.edu/key-facts/finances/">Budget</a></li>
+	<li id="menu-item-111354154679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154679"><a href="https://www.hsph.harvard.edu/key-facts/student-expenses/">Student Expenses</a></li>
+	<li id="menu-item-111354154678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154678"><a href="https://www.hsph.harvard.edu/key-facts/alumni/">Alumni Facts</a></li>
+	<li id="menu-item-111354154677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154677"><a href="https://www.hsph.harvard.edu/key-facts/enrollment-and-degrees/">Enrollment Statistics</a></li>
+</ul>
+</li>
+<li id="menu-item-111354154663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354154663"><a href="https://www.hsph.harvard.edu/harvard-chan-naming-gift/">Renaming The School</a></li>
+<li id="menu-item-111354154658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-111354154658"><a href="https://www.hsph.harvard.edu/location-and-facilities/">Location and Facilities</a>
+<ul class="sub-menu">
+	<li id="menu-item-111354154657" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354154657"><a href="https://www.hsph.harvard.edu/longwood-campus-directions/">Longwood Campus Directions</a></li>
+	<li id="menu-item-111354154659" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354154659"><a href="https://www.hsph.harvard.edu/landmark/">Landmark Center</a></li>
+	<li id="menu-item-111354154660" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354154660"><a href="https://www.hsph.harvard.edu/operations/services/campus-maps/">Campus Maps</a></li>
+</ul>
+</li>
+<li id="menu-item-111354155058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-111354155058"><a href="https://www.hsph.harvard.edu/contact-us/">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-111354155061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354155061"><a href="https://www.hsph.harvard.edu/academics/">Departments and Divisions</a></li>
+	<li id="menu-item-111354155064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354155064"><a href="https://www.hsph.harvard.edu/research-centers-and-initiatives/">Research Centers and Initiatives</a></li>
+	<li id="menu-item-111354155067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354155067"><a href="https://www.hsph.harvard.edu/contact-us/student-services/">Student Services</a></li>
+</ul>
+</li>
+<li id="menu-item-111354105389" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354105389"><a href="https://www.hsph.harvard.edu/admissions/contact-us/">Admissions</a></li>
+<li id="menu-item-111354105390" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354105390"><a href="https://www.hsph.harvard.edu/communications/">Office of Communications</a></li>
+<li id="menu-item-111354105399" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354105399"><a href="http://www.hupd.harvard.edu/">Public Safety</a></li>
+<li id="menu-item-111354109478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354109478"><a href="https://www.hsph.harvard.edu/privacy-policy/">Privacy Policy</a></li>
+</ul></div>				</nav><!-- .main-navigation -->
+
+			</div><!-- .site-header-menu -->
+					</div><!-- .left-collapse-container -->
+</div><!-- .sidebar .widget-area -->
+	<main id="main" class="site-main">
+		
+<article id="post-111354154646" class="post-111354154646 page type-page status-publish hentry">
+			<!-- Show post title if 'hsph_post_header_title_display' is true -->
+		<header class="entry-header"><h1 class="entry-title">Academic Departments, Divisions and Centers</h1></header>
+		
+	<div class="entry-content">
+		<h2>Academic Departments</h2>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a3ab" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Certain infectious or parasitic diseases  </summary>
+				<p>This chapter includes certain conditions caused by pathogenic organisms or microorganisms, such as bacteria, viruses, parasites or fungi. <a href="https://www.hsph.harvard.edu/biostatistics/">Visit the Certain infectious or parasitic diseases</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a408" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Neoplasms</summary>
+				<p>An abnormal or uncontrolled cellular proliferation which is not coordinated with an organism's requirements for normal tissue growth, replacement or repair. <a href="https://www.hsph.harvard.edu/environmental-health">Visit the Neoplasms</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a42d" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the blood or blood-forming organs</summary>
+				<p>This chapter includes diseases of the blood as well as diseases of blood forming organs. <a href="https://www.hsph.harvard.edu/epidemiology">Visit the Diseases of the blood or blood-forming organs</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a44f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the immune system</summary>
+				<p>The Department of Global Health and Population (GHP) seeks to improve global health through education, research, and service from a population-based perspective. The 21st century has arrived with a complex set of demographic patterns, disease burdens, and health policies. These create challenges that affect all societies, rich and poor, developed and developing. The department&#8217;s approach to these problems combines the analysis of population and health using quantitative and qualitative methods, the investigation of policies that affect health, and a concern with the politics and ethics of health and development. <a href="https://www.hsph.harvard.edu/global-health-and-population">Visit the Department of Global Health and Population</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a470" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Endocrine, nutritional or metabolic diseases </summary>
+				<p>This chapter includes endocrine diseases, nutritional diseases as well as metabolic diseases. <a href="https://www.hsph.harvard.edu/health-policy-and-management">Visit the Endocrine, nutritional or metabolic diseases</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a4ae" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Mental, behavioural or neurodevelopmental disorders</summary>
+				<p>Mental, behavioural and neurodevelopmental disorders are syndromes characterised by clinically significant disturbance in an individual's cognition, emotional regulation, or behaviour that reflects a dysfunction in the psychological, biological, or developmental processes that underlie mental and behavioural functioning. These disturbances are usually associated with distress or impairment in personal, family, social, educational, occupational, or other important areas of functioning. <a href="https://www.hsph.harvard.edu/immunology-and-infectious-diseases">Visit the Mental, behavioural or neurodevelopmental disorders</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a4d1" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Sleep-wake disorders</summary>
+				<p>Sleep-wake disorders are characterised by difficulty initiating or maintaining sleep (insomnia disorders), excessive sleepiness (hypersomnolence disorders), respiratory disturbance during sleep (sleep-related breathing disorders), disorders of the sleep-wake schedule (circadian rhythm sleep-wake disorders), abnormal movements during sleep (sleep-related movement disorders), or problematic behavioural or physiological events that occur while falling asleep, during sleep, or upon arousal from sleep (parasomnia disorders). <a href="https://www.hsph.harvard.edu/molecular-metabolism/">Visit the Sleep-wake disorders</a><br />
+</p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a4f1" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the nervous system</summary>
+				<p>This is a group of conditions characterised as being in or associated with the nervous system. <a href="https://www.hsph.harvard.edu/nutrition">Visit the Diseases of the nervous system</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the visual system</summary>
+				<p>This refers to any diseases of the visual system, which includes the eyes and adnexa, the visual pathways and brain areas, which initiate and control visual perception and visually guided behaviour. <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Diseases of the visual system</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the ear or mastoid process </summary>
+				<p>This chapter contains diseases of the ear and diseases of the mastoid process. <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Department of Social and Behavioral Sciences</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the circulatory system</summary>
+				<p>This refers to diseases of the organ system that passes nutrients (such as amino acids, electrolytes and lymph), gases, hormones, blood cells, etc. to and from cells in the body to help fight diseases, stabilize body temperature and pH, and to maintain homeostasis. <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Department of Social and Behavioral Sciences</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the respiratory system</summary>
+				<p>The mission of the department is to improve health throughout the human lifespan, including a special emphasis on children and adolescents. This mission is achieved through research to identify the social and behavioral determinants of health, the development and evaluation of interventions and policies leading to the improvement of population health, and the preparation of professionals and researchers who will fill leadership positions in advocacy and public service. <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Department of Social and Behavioral Sciences</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the digestive system</summary>
+				<p>The mission of the department is to improve health throughout the human lifespan, including a special emphasis on children and adolescents. This mission is achieved through research to identify the social and behavioral determinants of health, the development and evaluation of interventions and policies leading to the improvement of population health, and the preparation of professionals and researchers who will fill leadership positions in advocacy and public service. <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Department of Social and Behavioral Sciences</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the skin</summary>
+				<p>Diseases of the skin incorporate conditions affecting the epidermis, its appendages (hair, hair follicle, sebaceous glands, apocrine sweat gland apparatus, eccrine sweat gland apparatus and nails) and associated mucous membranes (conjunctival, oral and genital), the dermis, the cutaneous vasculature and the subcutaneous tissue (subcutis). <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Diseases of the skin</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the musculoskeletal system or connective tissue</summary>
+				<p>This chapter contains diseases of musculoskeletal system and diseases of connective tissue. <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Diseases of the musculoskeletal system or connective tissue</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Diseases of the genitourinary system</summary>
+				<p>Any disease characterised by pathological changes to the genitourinary system. <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Diseases of the genitourinary system</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Conditions related to sexual health</summary>
+				<p>Diseases of the skin incorporate conditions affecting the epidermis, its appendages (hair, hair follicle, sebaceous glands, apocrine sweat gland apparatus, eccrine sweat gland apparatus and nails) and associated mucous membranes (conjunctival, oral and genital), the dermis, the cutaneous vasculature and the subcutaneous tissue (subcutis). <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Conditions related to sexual health</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Pregnancy, childbirth or the puerperium</summary>
+				<p>A group of conditions characterised as occurring during the period of time from conception to delivery (pregnancy), during labour and delivery (childbirth) or during the approximately six weeks after delivery during which the uterus returns to the original size (puerperium). <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Pregnancy, childbirth or the puerperium</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Certain conditions originating in the perinatal period</summary>
+				<p>This chapter includes conditions that have their origin in the perinatal period even though death or morbidity occurs later. <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Conditions related to sexual health</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Developmental anomalies</summary>
+				<p>A group of conditions characterised as occurring during the period of time from conception to delivery (pregnancy), during labour and delivery (childbirth) or during the approximately six weeks after delivery during which the uterus returns to the original size (puerperium). <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Developmental anomalies</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Symptoms, signs or clinical findings, not elsewhere classified</summary>
+				<p>A group of conditions characterised as occurring during the period of time from conception to delivery (pregnancy), during labour and delivery (childbirth) or during the approximately six weeks after delivery during which the uterus returns to the original size (puerperium). <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Pregnancy, childbirth or the puerperium</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Injury, poisoning or certain other consequences of external causes</summary>
+				<p>In the ICD, injury means physical or physiological bodily harm resulting from interaction of the body with energy (mechanical, thermal, electrical, chemical or radiant, or due to extreme pressure) in an amount, or at a rate of transfer, that exceeds physical or physiological tolerance. Injury can also result from lack of vital elements, such as oxygen. Poisoning by and toxic effects of substances are included, as is damage of or due to implanted devices.<br>Injury usually has rapid onset in response to a well-defined event (e.g. a car crash, striking the ground after falling, drinking a strongly alkaline liquid, an overdose of a medication, a burn sustained during a surgical procedure). These events are often referred to as external causes of injury. The injurious energy can, however, originate from the injured person and/or from his or her immediate environment (e.g. a person running on a hot day sustains heat exhaustion), and injury can be caused by the injured person (i.e. intentional self-harm). <br>Injury includes manifestations that are evident immediately after onset, which may persist or not, and manifestations that first become evident at a later date.<a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Injury, poisoning or certain other consequences of external causes</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">External causes of morbidity or mortality</summary>
+				<p>The WHO definition of an ‘injury’ is: ‘Injuries are caused by acute exposure to physical agents such as mechanical energy, heat, electricity, chemicals, and ionizing radiation interacting with the body in amounts or at rates that exceed the threshold of human tolerance. In some cases, (for example, drowning and frostbite), injuries result from the sudden lack of essential agents such as oxygen or heat’. Injuries may be categorized in a number of ways. However, for most analytical purposes and for identifying intervention opportunities, it is especially useful to categorize injuries according to whether or not they were deliberately inflicted and by whom. Commonly used categories are:
+unintentional (i.e. accidental)
+intentional (i.e. deliberate):
+interpersonal (e.g. assault and homicide)
+self-harm (e.g. abuse of drugs and alcohol, self-mutilation, suicide)
+legal intervention (e.g. action by police or other law enforcement personnel)
+war, civil insurrection and disturbances (e.g. demonstrations and riots)
+undetermined intent<br>
+Regarding the collection of events that cause injuries, a set of definitions apply. See section ‘Definition related to transport accidents’. <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the External causes of morbidity or mortality</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Factors influencing health status or contact with health services</summary>
+				<p>Categories in this chapter are provided for occasions when circumstances other than a disease, injury or external cause classifiable elsewhere are recorded as "diagnoses" or "problems" <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Factors influencing health status or contact with health services</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Codes for special purposes</summary>
+				<p>Categories in this chapter are provided for occasions when circumstances other than a disease, injury or external cause classifiable elsewhere are recorded as "diagnoses" or "problems" <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Factors influencing health status or contact with health services</a></p>
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a50f" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Supplementary Chapter Traditional Medicine Conditions - Module I</summary>
+				<p>Categories in this chapter are provided for occasions when circumstances other than a disease, injury or external cause classifiable elsewhere are recorded as "diagnoses" or "problems" <a href="https://www.hsph.harvard.edu/social-and-behavioral-sciences">Visit the Factors influencing health status or contact with health services</a></p>
+			</details>
+			</div>
+<p><a class="anchor" name="divisions"></a></p>
+<h2>Divisions</h2>
+<ul>
+<li><a href="/biological-sciences">Division of Biological Sciences</a></li>
+<li><a title="Division of Policy Translation and Leadership Development" href="/translation">Division of Policy Translation and Leadership Development</a></li>
+</ul>
+<p><a class="anchor" name="researchcenters"></a></p>
+<h2>Research Centers</h2>
+<p>The School has established several centers to advance research in areas of importance to public health. These efforts tend to be multidisciplinary in their approach, bringing together faculty members from several Harvard Chan departments and in some cases from several faculties at Harvard University. Faculty affiliated with the centers offer courses in their field of interest through the School&#8217;s academic departments and often provide opportunities for student involvement in research.</p>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a540" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">University-wide Research Centers and Institutes</summary>
+				
+<ul>
+<li><a title="Francois-Xavier Bagnoud Center for Health and Human Rights" href="http://fxb.harvard.edu">François-Xavier Bagnoud Center for Health and Human Rights</a></li>
+<li><a title="Harvard Center for Population and Development Studies" href="https://www.hsph.harvard.edu/population-development">Harvard Center for Population and Development Studies</a></li>
+<li><a title="Harvard Institute for Global Health" href="http://www.globalhealth.harvard.edu">Harvard Global Health Institute</a></li>
+<li><a title="Harvard Humanitarian Initiative (HHI)" href="https://hhi.harvard.edu/">Harvard Humanitarian Initiative (<acronym title="The Harvard Humanitarian Initiative">HHI</acronym>)</a></li>
+</ul>
+
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a587" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">School-wide Research Centers</summary>
+				
+<ul>
+<li><a title="Center for Climate, Health, and the Global Environment (C-CHANGE)" href="https://www.hsph.harvard.edu/c-change/">Center for Climate, Health, and the Global Environment (C-CHANGE)</a></li>
+<li><a title="Center for Communicable Disease Dynamics" href="http://ccdd.hsph.harvard.edu">Center for Communicable Disease Dynamics</a></li>
+<li><a title="Center for Health Communication" href="https://www.hsph.harvard.edu/chc">Center for Health Communication</a></li>
+<li><a title="Center for Health Decision Science" href="http://chds.hsph.harvard.edu">Center for Health Decision Science</a></li>
+<li><a title="Harvard Center for Risk Analysis" href="http://www.hcra.harvard.edu">Harvard Center for Risk Analysis</a></li>
+<li><a href="https://hcmph.sph.harvard.edu/" target="_blank" rel="noopener">Harvard Chan Microbiome in Public Health Center</a></li>
+<li><a title="Harvard School of Public Health AIDS INITIATIVE" href="https://aids.harvard.edu/">Harvard Chan School AIDS Initiative</a></li>
+<li><a title="Harvard School of Public Health Center for Work, Health, and Well-being" href="http://centerforworkhealth.sph.harvard.edu">Harvard Chan School Center for Work, Health, and Well-being</a></li>
+<li><a href="/india-center/">Harvard Chan School India Center</a></li>
+<li><a title="Harvard Injury Control Research Center" href="https://www.hsph.harvard.edu/hicrc">Harvard Injury Control Research Center</a></li>
+<li><a title="John B. Little Center for Radiation Sciences and Environmental Health" href="https://www.hsph.harvard.edu/jbl-center">John B. Little Center for Radiation Sciences</a></li>
+<li><a href="https://sites.sph.harvard.edu/cancer-prevention/">Zhu Family Center for Global Cancer Prevention</a></li>
+</ul>
+
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a5c4" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Department &amp; Division Centers</summary>
+				
+<ul>
+<li><a title="Center for Biostatistics in AIDS Research" href="https://www.hsph.harvard.edu/cbar">Center for Biostatistics in AIDS Research (CBAR)</a></li>
+<li><a title="Center for Global Tobacco Control" href="https://www.hsph.harvard.edu/cgtc">Center for Global Tobacco Control</a></li>
+<li><a title="Preparedness and Emergency Response Learning Center" href="https://www.hsph.harvard.edu/hperlc">Emergency Preparedness Research Evaluation and Practice Program</a></li>
+<li class="p1"><a title="Harvard Education and Research Center for Occupational Safety and Health" href="https://www.hsph.harvard.edu/erc">Harvard Education and Research Center for Occupational Safety and Health</a></li>
+<li><a title="Harvard NIEHS Center for Environmental Health" href="https://www.hsph.harvard.edu/niehs">Harvard NIEHS Center for Environmental Health</a></li>
+<li><a href="/health-happiness">Lee Kum Sheung Center for Health and Happiness</a></li>
+<li><a href="https://www.hsph.harvard.edu/prc">Prevention Research Center on Nutrition and Physical Activity</a></li>
+<li><a href="https://www.hsph.harvard.edu/gsh-lab/sabriulkercenter/">Sabri Ülker Center for Nutrient, Genetic, and Metabolic Research</a></li>
+</ul>
+
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a636" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Research Programs &amp; Projects</summary>
+				
+<ul>
+<li><a href="/chc/">Center for Health Communication</a></li>
+<li><a href="http://hsph.harvard.edu/china-health-partnership">China Health Partnership</a></li>
+<li><a href="https://www.hsph.harvard.edu/d-lab/" target="_blank" rel="noopener noreferrer">D-Lab at Harvard Chan School</a></li>
+<li><a href="https://www.hsph.harvard.edu/earth">Environment And Reproductive Health (EARtH Study)</a></li>
+<li><a title="Harvard Opinion Research Program" href="https://www.hsph.harvard.edu/horp">Harvard Opinion Research Program</a></li>
+<li><a title="Health Professional Follow-Up Study" href="https://www.hsph.harvard.edu/hpfs">Health Professionals Follow-Up Study</a></li>
+<li><a title="Initiative on Global Health Quality" href="http://highq.fas.harvard.edu/">Initiative on Global Health Quality</a></li>
+<li><a title="International Health Systems Program" href="https://www.hsph.harvard.edu/international-health-systems-program/">International Health Systems Program</a></li>
+<li><a title="Lung Cancer Disparities Center" href="http://lcdc.sph.harvard.edu">Lung Cancer Disparities Center</a></li>
+<li><a title="Lung Cancer Susceptibility and Outcomes Study" href="https://www.hsph.harvard.edu/christiani-mgh-studies/lung-cancer-study">Lung Cancer Susceptibility and Outcomes Study</a></li>
+<li><a title="Neuroepidemiology Research Group" href="https://www.hsph.harvard.edu/neuroepi">Neuroepidemiology Research Group</a></li>
+<li><a title="Nurses Health Study (Brigham and Women's Hospital, HMS, and HSPH)" href="http://www.channing.harvard.edu/nhs">Nurses&#8217; Health Study (w.Channing Laboratory, Brigham and Women&#8217;s Hospital, and HMS)</a></li>
+<li><a title="Nurses' Health Study II" href="http://www.channing.harvard.edu/nhs">Nurses&#8217; Health Study II</a></li>
+<li><a href="https://www.hsph.harvard.edu/cvdepi">Program in Cardiovascular Epidemiology</a></li>
+<li><a title="Program on the Global Demography of Aging" href="https://www.hsph.harvard.edu/pgda">Program on the Global Demography of Aging</a></li>
+<li><a title="Program in Health Care Financing" href="https://www.hsph.harvard.edu/health-care-financing">Program in Health Care Financing</a></li>
+<li><a title="Program on Health Care Negotiation and Conflict Resolution" href="https://www.hsph.harvard.edu/hcncr/">Program on Health Care Negotiation and Conflict Resolution</a></li>
+<li><a title="Program on Humanitarian Policy and Conflict Research" href="http://www.hpcrresearch.org">Program on Humanitarian Policy and Conflict Research</a></li>
+<li><a href="https://www.hsph.harvard.edu/program-molecular-genetic-epidemiology">Program in Molecular and Genetic Epidemiology</a></li>
+<li><a href="https://www.hsph.harvard.edu/pqg">Program in Quantitative Genomics</a></li>
+<li><a href="https://www.hsph.harvard.edu/thegeocodingproject">Public Health Disparities Geocoding Project Monograph</a></li>
+<li><a href="https://www.hsph.harvard.edu/nutritionsource">The Nutrition Source</a></li>
+</ul>
+
+			</details>
+			</div>
+<div class="hsph-bootstrap">
+			<details id="expandable-639274b96a666" class="expandable bg-light border-left py-1 px-3 mb-4 " >
+				<summary class="h6 my-2" role="heading" aria-level="6">Research Cores</summary>
+				
+<ul>
+<li><a title="support" name="support"></a><a href="https://www.hsph.harvard.edu/research-strategy-and-development/faculty-resources/grant-management/cores/">Core Facilities</a></li>
+</ul>
+
+			</details>
+			</div>
+<p><a class="anchor" name="multidisc-initiatives"></a></p>
+<h2>Multidisciplinary Initiatives</h2>
+<p>These initiatives link centers, programs, departments and  researchers to foster collaboration and coordination of research, education, and community engagement activities:<strong><br />
+</strong></p>
+<ul>
+<li><a href="https://www.defeatingmalaria.harvard.edu/">Defeating Malaria: From the Genes to the Globe</a></li>
+<li><a href="https://www.hsph.harvard.edu/comparative-effectiveness-research-initiative/">Comparative Effectiveness</a></li>
+<li><a title="Genes and the Environment" href="https://www.hsph.harvard.edu/gei">Genes and the Environment</a></li>
+<li><a href="https://www.hsph.harvard.edu/global-nursing/" target="_blank" rel="noopener">Harvard Global Nursing Leadership Program</a></li>
+<li><a title="Women and Health Initiative" href="https://www.hsph.harvard.edu/women-and-health-initiative">Women and Health</a></li>
+</ul>
+<p><a class="anchor" name="internationalresearch"></a></p>
+<h2>International Research</h2>
+<p>Harvard Chan researchers are involved in projects promoting global health on nearly every continent. From advancing scientific discovery to training international health leaders, Harvard Chan has been at the forefront of efforts to benefit the health of populations worldwide.</p>
+<p>See <a href="https://www.hsph.harvard.edu/world-map/">World Map</a> for more information.</p>
+<p><a class="anchor" name="researchadministration"></a></p>
+<h2>Research Administration and Support</h2>
+<ul>
+<li><a href="https://osp.finance.harvard.edu/">Harvard University Office for Sponsored Programs</a></li>
+<li><a href="http://www.otd.harvard.edu">Harvard University Office of Technology Development (OTD)</a></li>
+<li><a href="https://www.hsph.harvard.edu/financial-services/sponsored-programs-administration">Harvard Chan Sponsored Programs Administration</a></li>
+<li><a title="HSPH Export Controls" href="https://www.hsph.harvard.edu/export-controls">Export Controls</a></li>
+<li><a title="Office of Regulatory Affairs and Research Compliance" href="/regulatory-affairs-and-research-compliance/">Office of Regulatory Affairs and Research Compliance</a></li>
+<li><a href="https://www.hsph.harvard.edu/ohra">Office of Human Research Administration</a></li>
+</ul>
+<p><a class="anchor" name="degreeprograms"></a></p>
+<h2>Degree Programs</h2>
+<ul>
+<li><a href="/admissions/degree-programs/">Prospective students degree program information</a></li>
+</ul>
+<h2>Fellowships</h2>
+<ul>
+<li><a href="https://www.hsph.harvard.edu/lownscholars/">The Bernard Lown Scholars in Cardiovascular Health Program</a></li>
+<li><a href="/population-development/training/bell-fellowship">David E. Bell Fellowship</a></li>
+<li><a href="https://developingchild.harvard.edu/about/student-resources/djokovic-science-innovation-fellowship/">Djokovic Science and Innovation Fellowship</a></li>
+<li><a title="Ethical Issues in Global Health Research Fellowship" href="https://www.hsph.harvard.edu/fellowships/ethical-issues-in-global-health-research-fellowship/">Ethical Issues in Global Health Research Fellowship</a></li>
+<li><a title="Fellowship in Cancer Prevention Control" href="/cancer-prevention-fellowship">Fellowship in Cancer Prevention Control</a></li>
+<li><a href="https://fxb.harvard.edu/fellowships/">FXB Fellowships</a></li>
+<li><a href="/gei">Interdisciplinary Training in Genes and the Environment</a></li>
+<li><a href="https://www.hsph.harvard.edu/population-development/postdoctoral-fellowships/mortimer-spiegelman-postdoctoral-fellowship-in-demographic-studies/">Mortimer Spiegelman Postdoctoral Fellowship in Demographic Studies</a></li>
+<li><a title="OEMR" href="/oemr">Occupational &amp; Environmental Medicine Residency</a></li>
+<li><a href="http://www.francisfellowships.org/">Parker B. Francis Fellowship Program in Pulmonary Research</a></li>
+<li><a href="/biostatistics/fellowship-opportunities">Postdoctoral Fellowships in Biostatistics</a></li>
+<li><a title="EPi Fellowships" href="https://www.hsph.harvard.edu/epidemiology/rose-traveling-fellowship-program/">Rose Traveling Fellowship Program</a></li>
+<li><a href="https://www.hsph.harvard.edu/takemi/">Takemi Fellowship Program</a></li>
+<li><a href="https://www.hsph.harvard.edu/molecular-metabolism/training-program-in-molecular-metabolism/">Training Program in Molecular Metabolism (MMTP)</a></li>
+<li><a href="/faculty-affairs/yerby-postdoctoral-fellowship-program/">Yerby Postdoctoral Fellowship Program</a></li>
+</ul>
+<p>For all open listed postdoctoral fellowship positions, please visit the <a href="https://academicpositions.harvard.edu/postings/search">search postings page</a>.</p>
+<p><a class="anchor" name="summerprograms"></a></p>
+<h2>Summer Programs</h2>
+<ul>
+<li><a href="/clinical-effectiveness">Summer Program in Clinical Effectiveness</a></li>
+<li><a href="/public-health-studies">Summer Session for Public Health Studies</a></li>
+<li><a href="https://www.hsph.harvard.edu/immunology-and-infectious-diseases/summer-courses/">Global Infectious Diseases Summer Program</a></li>
+</ul>
+	</div><!-- .entry-content -->
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+	</main><!-- .site-main -->
+
+	
+
+</div><!-- .content-area -->
+
+
+		</div><!-- .site-content -->
+		<section id="twitter-footer" class="twitter-footer">
+		<h3 class="twitter-feed-title">
+			<a href="https://twitter.com/HarvardChanSPH">Harvard Chan School on Twitter</a>			</h3>
+			<div id="twitter-carousel-container"><div class="flexslider">	<ul class="slides"><li>	<div class="twitter-slide">		<div class="twitter-slide-text clearfix">A toolkit developed by <a target="_blank" href="http://www.twitter.com/HarvardCCHANGE">@HarvardCCHANGE</a> and <a target="_blank" href="http://www.twitter.com/Americares">@Americares</a> aims to protect people on the front lines of climate change. <a target="_blank" href="https://t.co/z3vjqGf16X">https://t.co/z3vjqGf16X</a>		</div>	</div></li><li>	<div class="twitter-slide">		<div class="twitter-slide-text clearfix">Join us on 12/14 for a conversation with David Cash, the <a target="_blank" href="http://www.twitter.com/EPA">@EPA</a>’s regional administrator for New England, about the E… <a target="_blank" href="https://t.co/MLwCsuabpJ">https://t.co/MLwCsuabpJ</a>		</div>	</div></li><li>	<div class="twitter-slide">		<div class="twitter-slide-text clearfix">In a recent #OnTheBrink event, <a target="_blank" href="http://www.twitter.com/RepDwightEvans">@RepDwightEvans</a> (D-Philadelphia) discusses the need for collective action on… <a target="_blank" href="https://t.co/4o9CmYB5yc">https://t.co/4o9CmYB5yc</a>		</div>	</div></li><li>	<div class="twitter-slide">		<div class="twitter-slide-text clearfix">About 30 students settled in for an evening of meditative painting in Harvard Chan School’s Rosenau Atrium at an ev… <a target="_blank" href="https://t.co/TUiw1OurpH">https://t.co/TUiw1OurpH</a>		</div>	</div></li><li>	<div class="twitter-slide">		<div class="twitter-slide-text clearfix">Three emergency room physicians spoke about progress made in addressing the climate crisis at the recent UN climate… <a target="_blank" href="https://t.co/yPtN1TZk4a">https://t.co/yPtN1TZk4a</a>		</div>	</div></li><li>	<div class="twitter-slide">		<div class="twitter-slide-text clearfix">In the wake of the sadness and trauma of the pandemic, it’s important for people dealing with loss or who are isola… <a target="_blank" href="https://t.co/CtOmvxCAyW">https://t.co/CtOmvxCAyW</a>		</div>	</div></li>	</ul></div><div id="twitter-slide-controls"></div></div>		</section>
+				<footer id="colophon" class="site-footer" role="contentinfo">
+							<div id="footer-audience-menu" class="footer-audience-menu">
+					<span class="footer-information-for">Information For:</span>
+					<nav id="footer-audience-navigation" class="footer-audience-navigation" aria-label="Audience Menu">
+						<div class="menu-audience-menu-container"><ul id="menu-audience-menu-1" class="hsph-audience-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113411"><a href="/admissions/">Prospective Students</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113412"><a href="/current-students/">Current Students</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113413"><a href="https://alumni.sph.harvard.edu">Alumni</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113414"><a href="/faculty-staff/">Faculty &#038; Staff</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113415"><a href="/giving/">Friends &#038; Supporters</a></li>
+</ul></div>					</nav><!-- .footer-audience-navigation -->
+				</div><!-- .footer-audience-menu -->
+										<div id="footer-primary-menu" class="footer-primary-menu">
+					<nav id="footer-primary-navigation" class="footer-primary-navigation" aria-label="Primary Menu">
+						<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="hsph-footer-primary-menu"><li id="menu-item-111354113445" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-111354113445"><a href="https://www.hsph.harvard.edu/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-111354113446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113446"><a href="https://www.hsph.harvard.edu/about/key-facts/">Key Facts</a></li>
+	<li id="menu-item-111354113447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113447"><a href="https://www.hsph.harvard.edu/harvard-chan-naming-gift/">Renaming the School</a></li>
+	<li id="menu-item-111354113448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113448"><a href="https://www.hsph.harvard.edu/deans-office/">Office of the Dean</a></li>
+	<li id="menu-item-111354113449" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113449"><a href="https://www.hsph.harvard.edu/location-and-facilities/">Location and Facilities</a></li>
+	<li id="menu-item-111354113450" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113450"><a href="https://www.hsph.harvard.edu/about/administrative-offices/">Administrative Offices</a></li>
+	<li id="menu-item-111354113451" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113451"><a href="https://www.hsph.harvard.edu/contact-us/">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-item-111354113452" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-111354113452"><a href="https://www.hsph.harvard.edu/faculty-research/">Faculty and Research</a>
+<ul class="sub-menu">
+	<li id="menu-item-111354113453" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113453"><a href="https://www.hsph.harvard.edu/faculty/">Faculty and Researcher Directory</a></li>
+	<li id="menu-item-111354113454" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-111354113454"><a href="https://www.hsph.harvard.edu/departments/" aria-current="page">Academic Departments, Divisions and Centers</a></li>
+	<li id="menu-item-111354113455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113455"><a href="https://www.hsph.harvard.edu/world-map/">International Research</a></li>
+	<li id="menu-item-111354113456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113456"><a href="https://www.hsph.harvard.edu/faculty-affairs/postdoctoral-research-fellows/">Postdoctoral Research Fellows</a></li>
+	<li id="menu-item-111354113457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113457"><a href="https://www.hsph.harvard.edu/faculty-affairs/">Office of Faculty Affairs</a></li>
+	<li id="menu-item-111354113458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113458"><a href="https://www.hsph.harvard.edu/searches/">Faculty Searches</a></li>
+	<li id="menu-item-111354113459" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113459"><a href="https://www.hsph.harvard.edu/diversity/">Office of Diversity and Inclusion</a></li>
+</ul>
+</li>
+<li id="menu-item-111354113460" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-111354113460"><a href="https://www.hsph.harvard.edu/admissions/">Admissions &#038; Aid</a>
+<ul class="sub-menu">
+	<li id="menu-item-111354113461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113461"><a href="https://www.hsph.harvard.edu/admissions/why-harvard-chan/">Why Harvard Chan</a></li>
+	<li id="menu-item-111354113462" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113462"><a href="https://www.hsph.harvard.edu/admissions/degree-programs/">Degree Programs</a></li>
+	<li id="menu-item-111354113463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113463"><a href="https://www.hsph.harvard.edu/admissions/non-degree-programs/">Non-Degree Programs</a></li>
+	<li id="menu-item-111354113464" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113464"><a href="https://www.hsph.harvard.edu/admissions/financial-aid/">Financial Aid</a></li>
+	<li id="menu-item-111354113465" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113465"><a href="https://www.hsph.harvard.edu/admissions/student-experience/">Student Experience</a></li>
+	<li id="menu-item-111354113466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113466"><a href="https://www.hsph.harvard.edu/admissions/careers/">Career Advancement</a></li>
+	<li id="menu-item-111354113467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113467"><a href="https://www.hsph.harvard.edu/admissions/admissions/">Apply</a></li>
+</ul>
+</li>
+<li id="menu-item-111354113468" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current-menu-ancestor current-menu-parent menu-item-has-children menu-item-111354113468"><a href="https://www.hsph.harvard.edu/departments/" aria-current="page">Academics</a>
+<ul class="sub-menu">
+	<li id="menu-item-111354113469" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-111354113469"><a href="https://www.hsph.harvard.edu/departments/#academicdepartments" aria-current="page">Academic Departments</a></li>
+	<li id="menu-item-111354113482" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-111354113482"><a href="https://www.hsph.harvard.edu/departments/#divisions" aria-current="page">Divisions</a></li>
+	<li id="menu-item-111354113470" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-111354113470"><a href="https://www.hsph.harvard.edu/departments/#researchcenters" aria-current="page">Research Centers</a></li>
+	<li id="menu-item-111354113472" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-111354113472"><a href="https://www.hsph.harvard.edu/departments/#flagshipinitiatives" aria-current="page">Flagship Initiatives</a></li>
+	<li id="menu-item-111354113473" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-111354113473"><a href="https://www.hsph.harvard.edu/departments/#internationalresearch" aria-current="page">International Research</a></li>
+	<li id="menu-item-111354113475" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113475"><a href="https://www.hsph.harvard.edu/research-strategy-and-development/">Research Administration and Support</a></li>
+	<li id="menu-item-111354113474" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113474"><a href="https://www.hsph.harvard.edu/admissions/degree-programs/">Degree Programs</a></li>
+	<li id="menu-item-111354113476" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-111354113476"><a href="https://www.hsph.harvard.edu/departments/#Fellowships-and-Residencies" aria-current="page">Fellowships and Residencies</a></li>
+	<li id="menu-item-111354113477" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-111354113477"><a href="https://www.hsph.harvard.edu/departments/#summerprograms" aria-current="page">Summer Programs</a></li>
+	<li id="menu-item-111354113478" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113478"><a href="https://ecpe.sph.harvard.edu/">Continuing Professional Education</a></li>
+	<li id="menu-item-111354113615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113615"><a href="https://www.hsph.harvard.edu/admissions/degree-programs/interdisciplinary-concentrations/">Interdisciplinary Concentrations</a></li>
+	<li id="menu-item-111354113616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113616"><a href="https://www.hsph.harvard.edu/registrar/academic-calendar/">Academic Calendar</a></li>
+	<li id="menu-item-111354113617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113617"><a href="https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1904/2015/12/Harvard-Chan-Viewbook-2015-162.pdf">Harvard Chan Viewbook</a></li>
+</ul>
+</li>
+<li id="menu-item-111354113479" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-111354113479"><a href="/ecpe/">Executive/Continuing Ed</a>
+<ul class="sub-menu">
+	<li id="menu-item-111354113483" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113483"><a href="https://www.hsph.harvard.edu/ecpe/programs/">Program Offerings</a></li>
+	<li id="menu-item-111354113484" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113484"><a href="https://www.hsph.harvard.edu/ecpe/programs-for-organizations/">Custom Programs</a></li>
+	<li id="menu-item-111354113485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113485"><a href="https://execed.sph.harvard.edu/executive-education-program-portfolio/">Request Information</a></li>
+	<li id="menu-item-111354113486" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113486"><a href="https://www.hsph.harvard.edu/ecpe/news/">News and Resources</a></li>
+	<li id="menu-item-111354113487" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113487"><a href="https://www.hsph.harvard.edu/ecpe/about/">About ECPE</a></li>
+	<li id="menu-item-111354113488" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113488"><a href="https://www.hsph.harvard.edu/ecpe/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-111354113480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-111354113480"><a href="https://www.hsph.harvard.edu/news/">News</a>
+<ul class="sub-menu">
+	<li id="menu-item-111354113493" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113493"><a href="https://www.hsph.harvard.edu/news/features/">Featured News</a></li>
+	<li id="menu-item-111354113494" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113494"><a href="https://www.hsph.harvard.edu/news/press-releases/">Press Releases</a></li>
+	<li id="menu-item-111354113495" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113495"><a href="https://www.hsph.harvard.edu/multitaxo/tag/student-stories/">Student Stories</a></li>
+	<li id="menu-item-111354113496" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113496"><a href="https://www.hsph.harvard.edu/news/hsph-in-the-news/">In the News</a></li>
+	<li id="menu-item-111354113497" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113497"><a href="https://www.hsph.harvard.edu/news/newsletters/">Newsletters</a></li>
+	<li id="menu-item-111354113498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113498"><a href="https://www.hsph.harvard.edu/magazine/">HPH Magazine</a></li>
+	<li id="menu-item-111354113500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113500"><a href="https://www.hsph.harvard.edu/news/why-public-health/">Why Public Health?</a></li>
+</ul>
+</li>
+</ul></div>					</nav><!-- .footer-primary-menu -->
+				</div><!-- .footer-primary-navigation -->
+			
+			<div class="site-info">
+				<div class="site-footer-logo"><a href="https://www.hsph.harvard.edu/" rel="home">Harvard T.H. Chan School of Public Health</a></div>
+				<address class="vcard">
+					<div class="adr">
+						<span class="street-address">677 Huntington Avenue</span>
+						<span class="locality">Boston</span>,
+						<abbr class="region" title="Massachusetts">MA</abbr>
+						<span class="postal-code">02115</span>
+					</div>
+					<div class="tel">+1 (617) 495‑1000</div>
+				</address>
+			</div><!-- .site-info -->
+							<div id="footer-social-menu" class="footer-social-menu">
+					<nav id="footer-social-navigation" class="footer-social-navigation" aria-label="Primary Menu">
+						<div class="menu-footer-social-container"><ul id="menu-footer-social" class="social-navigation"><li id="menu-item-111354108407" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354108407"><a title="Twitter" target="_blank" rel="noopener" href="http://twitter.com/HarvardChanSPH">Twitter</a></li>
+<li id="menu-item-111354108408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354108408"><a title="Facebook" target="_blank" rel="noopener" href="http://www.facebook.com/harvardpublichealth">Facebook</a></li>
+<li id="menu-item-111354108409" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354108409"><a title="YouTube" target="_blank" rel="noopener" href="https://www.youtube.com/user/HarvardPublicHealth">YouTube</a></li>
+<li id="menu-item-111354108411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354108411"><a title="LinkedIn" target="_blank" rel="noopener" href="http://www.linkedin.com/edu/school?id=20305&#038;trk=tyah">LinkedIn</a></li>
+<li id="menu-item-111354113570" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354113570"><a href="https://www.instagram.com/harvardchansph/">Instagram</a></li>
+<li id="menu-item-111354108412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354108412"><a title="iTunes U" target="_blank" rel="noopener" href="https://itunes.apple.com/us/podcast/harvard-public-health/id1079574471">iTunes</a></li>
+</ul></div>					</nav><!-- .footer-social-navigation -->
+				</div><!-- .footer-social-menu -->
+										<div id="footer-footer-menu" class="footer-footer-menu">
+					<nav id="footer-navigation" class="footer-navigation" aria-label="Primary Menu">
+						<div class="menu-sub-footer-menu-container"><ul id="menu-sub-footer-menu" class="hsph-footer-menu"><li id="menu-item-1020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1020"><a href="https://www.hsph.harvard.edu/">Harvard Chan Home</a></li>
+<li id="menu-item-111354105449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354105449"><a href="https://www.hsph.harvard.edu/contact-us/">Contact Us</a></li>
+<li id="menu-item-111354105212" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354105212"><a href="https://www.harvard.edu">Harvard University Home</a></li>
+<li id="menu-item-1021" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1021"><a href="https://www.hsph.harvard.edu/giving/">Make a Gift</a></li>
+<li id="menu-item-111354108039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111354108039"><a href="https://www.hsph.harvard.edu/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-111354105198" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354105198"><a href="https://www.harvard.edu/copyright-issue">Report Copyright Violation</a></li>
+<li id="menu-item-111354119821" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111354119821"><a title="Online Accessibility at Harvard University" href="https://accessibility.huit.harvard.edu">Accessibility</a></li>
+</ul></div>					</nav><!-- .footer-navigation -->
+				</div><!-- .footer-footer-menu -->
+							<div id="copyright" class="copyright">
+					Copyright &copy; 2022 The President and Fellows of Harvard College				</div><!-- .footer-footer-menu -->
+		</footer><!-- .site-footer -->
+	</div><!-- .site -->
+</div><!-- .wrapper -->
+<div class="menu-mask"></div>
+
+			<!-- Google Tag Manager (noscript) -->
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XL6K"
+			height="0" width="0" title="Google tag manager" aria-hidden="true" style="display:none;visibility:hidden"></iframe></noscript>			<!-- End Google Tag Manager (noscript) -->
+					<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		
+		<script>
+			// Slide controls for the sub brand carousel template
+			jQuery(document).ready(function($) {
+				if ( $('#sidebar-carousel-widget .flexslider').length && $().flexslider ) {
+					$('#sidebar-carousel-widget .flexslider').flexslider({
+						animation: 'fade',
+						prevText: ' ',
+						nextText: ' ',
+						controlsContainer: '#hsph-carousel-widget-controls',
+					});
+				}
+			});
+		</script>
+		
+		<script>
+			// Slide controls for the sub brand carousel template
+			jQuery(document).ready(function($) {
+				if ( $('#news-sidebar-carousel-widget .flexslider').length && $().flexslider ) {
+					$('#news-sidebar-carousel-widget .flexslider').flexslider({
+						animation: 'fade',
+						prevText: ' ',
+						nextText: ' ',
+						controlsContainer: '#hsph-news-carousel-widget-controls',
+					});
+				}
+			});
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/plugins/plugin-tagging/assets/js/hsph-plugin-tagging.js?ver=1.1.5' id='hsph-plugin-tagging-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/plugins/plugin-tinymce-tweaks/assets/js/jquery.tablesorter.min.js?ver=2.31.1' id='jquery-tablesorter-js-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/plugins/plugin-tinymce-tweaks/assets/js/hsph-table-sortable.js?ver=1.1.1' id='hsph-table-sortable-js-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/js/jquery.flexslider-min.js?ver=1.3.96' id='jquery-flexslider-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/plugins/plugin-design-system/assets/js/hsph-bootstrap.bundle.min.js?ver=1.4.11' id='hsph-bootstrap-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016-child-home/js/homepage.js?ver=4.0.14' id='homepage_scripts-js'></script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/js/skip-link-focus-fix.js?ver=1.3.96' id='hsph-skip-link-focus-fix-js'></script>
+<script type='text/javascript' id='hsph-script-js-extra'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hsph.harvard.edu/wp-content/themes/theme-main-2016/assets/js/functions.js?ver=1.3.96' id='hsph-script-js'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-26d49e9cd1d82010791","applicationID":"529647296","transactionName":"YlBRN0pRWBUDBU1dWFsaZhFRHxkPDAJcTBlFXUM=","queueTime":0,"applicationTime":557,"atts":"ThdSQQJLSxs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

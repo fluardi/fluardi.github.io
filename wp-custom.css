@@ -1,0 +1,292 @@
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event.cat_heritage-identity {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e8f1f7;
+    border-radius: 0.1875rem;
+    width: 100%;
+    margin-left: 0;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event.cat_heritage-identity p {
+    margin-bottom: 0.125rem;
+}
+
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event.cat_heritage-identity .tribe-events-calendar-list__event-datetime-wrapper {
+    display: inline-block;
+    margin: 0 8px 0 0;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event.cat_heritage-identity .tribe-events-calendar-list__event-details {
+    width: 100%;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event.cat_heritage-identity .tribe-events-calendar-list__event-featured-image-wrapper  {
+    display: none;
+}
+
+
+/*20220121 Temporary youtube embed fix*/
+
+.page-template-event-series .embed-responsive-4by3::before, 
+.tribe-events-single-event-description .hsph-bootstrap  .embed-responsive-4by3::before {
+  padding-top: 56.25% !important; }
+
+/*MOVE TO SHEETS*/
+.hsph-bootstrap .tribe-related-events-thumbnail .embed-responsive {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1872px) {
+.post-type-archive-tribe_events .site-main {
+    margin: 0 auto;
+}
+}
+
+.hsph-bootstrap .faculty-profile .card .related-links a {
+    display: inline-block;
+}
+
+
+.hsph-bootstrap .embed-responsive {
+    position: relative;    
+    display: block;    
+    width: 100%;    
+    padding: 0;    
+    overflow: hidden;    
+    margin-bottom: 1.75rem;
+    }
+
+
+@media screen and (min-width: 700px) {
+	
+	/*profile bg fix*/
+	
+	.faculty-profile-background .jumbotron-cover {
+    background-size: 100% !important;
+    margin: -180px;
+    -webkit-filter: blur(90px);
+    -moz-filter: blur(90px);
+    -o-filter: blur(90px);
+    -ms-filter: blur(90px);
+    filter: blur(90px);
+    height: 280%;
+    background-position-y: bottom;
+}
+	
+/*style.css 301
+ * Increased contrast on main carousel gradient*/	
+	
+	
+#main-carousel .home_carousel_full_width_bottom.overlay .main-carousel-overlay, #main-carousel-takeover .primary-slide .home_carousel_full_width_bottom.overlay .main-carousel-overlay {
+    background: linear-gradient( rgba(0,0,0,0), rgba( 0, 0, 0, 0.25 ) 59%, rgba( 0, 0, 0, 1 ) );
+    background: linear-gradient( rgba(0,0,0,0), rgba( 0, 0, 0, 0.25 ) 59%, rgba( 0, 0, 0, 1 ) );
+    background: linear-gradient( rgba(0,0,0,0), rgba( 0, 0, 0, 0.25 ) 59%, rgba( 0, 0, 0, 1 ) );
+    background: linear-gradient( rgba(0,0,0,0), rgba( 0, 0, 0, 0.25 ) 59%, rgba( 0, 0, 0, 1 ) );
+}
+
+}
+
+/*above to be added in later style pass*/
+
+/*harvard chan studio events tag-logo*/
+
+article.tribe-events-calendar-list__event.event_series-studio:not(.event_series-onthebrink) .tribe-events-calendar-list__event-description p {
+    margin-bottom: 0.75rem;
+}
+
+
+article.tribe-events-calendar-list__event.event_series-studio:not(.event_series-onthebrink) .tribe-events-calendar-list__event-description:after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 30px;
+    background-image: url("https://www.hsph.harvard.edu/wp-content/uploads/2022/01/HarvardChanStudio_logo_iso_RGB-s.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.event_series-studio:not(.event_series-onthebrink) .post-thumbnail:after {
+    content: "";
+    display: inline-block;
+    background-color: #292d33;
+    width: 100%;
+    height: 60px;
+    margin-top: -15px;
+    background-image: url("https://www.hsph.harvard.edu/wp-content/uploads/2022/01/HarvardChanStudio_logo_iso_RGB-s_KO.svg");
+    background-size: 115px;
+    background-repeat: no-repeat;
+    background-position: top 13px right 15px;
+}
+
+
+/*end harvard chan studio events tag-logo*/
+
+
+
+/*highlighted-menu-item utility links*/
+
+#site-utility-menu li.highlighted-menu-item a {
+    font-weight: bold;
+    color: #a51c30;
+}
+
+
+/*announcement bar
+ * 
+ * GM: These can be moved to main stylesheet*/
+
+.alert-announcement-header * {
+    color: #fff !important;
+}
+
+.alert-announcement-header h1,
+.alert-announcement-header h2,
+.alert-announcement-header h3,
+.alert-announcement-header h4,
+.alert-announcement-header h5,
+.alert-announcement-header h6 {
+    margin-bottom: 0;
+    line-height: 1.25;
+}
+
+.alert-announcement-header h3 {
+	font-size: 1.5rem;
+}
+
+.hsph-bootstrap .alert-announcement-header .btn-crimson {
+    box-shadow: none;
+}
+
+.hsph-bootstrap .bg-dark {
+    background-color: #292d33 !important; 
+	/*
+	 * GM update bootstrap's dark to the above color $gray-700*/
+}
+
+#main-carousel, #main-carousel-takeover {
+    background: #292d33;
+}
+
+.alert-announcement-header {
+    box-shadow: inset 0 -1px 2px 0 rgba(21, 23, 26, 0.5), inset 0 -1px 3px 1px rgba(21, 23, 26, 0.3);
+}
+
+/*END MOVE TO SHEETS*/
+
+
+/*studio temp page jan 2022*/
+
+.page-id-111354151841 .site-content {
+    margin-top: 30px;
+}
+
+.page-id-111354151841 .site-content #primary .entry-content h3 {
+    margin-bottom: 0px;
+}
+
+/*LEAVE IN CUSTOMIZER*/
+
+/*announcement bar temporary
+ * GM: Keep this in customizer, will need to remove when the racism announcement bar is done*/
+
+.alert-announcement-header {
+    position:relative;
+    background: url('https://cdn1.sph.harvard.edu/wp-content/uploads/2020/07/Racism-health-announcement-bar-image2.jpg') no-repeat left;
+    background-position: 0 17%;
+    background-size: 500px;
+		z-index: 3 !important;
+}
+
+
+/*END LEAVE IN CUSTOMIZER*/
+
+
+/*image alignment temp fix*/
+
+
+@media screen and (max-width: 920px) {
+
+img.alignright,
+img.alignleft {
+    width: 50%;
+}
+
+}
+
+@media screen and (max-width: 720px) {
+
+img.alignright,
+img.alignleft {
+    width: 100%;
+}
+
+}
+
+
+/*fixes widget spacing, gotta figure this out site-wide eventually*/
+
+/* Faculty Profiles - tablist hover */
+.faculty-profile-overview-section .nav-pills .nav-link:hover:not(.active) {
+	color: #1d2024;
+	background-color: #dcdce0;
+	border-color: #d5d5da;
+}
+
+
+/* Search page /search/ custom styles */
+
+.entry-content .gsc-search-box [class|="gsc"] {
+	line-height: .9;
+}
+
+.entry-content [class|="gsc"], 
+.entry-content [class|="gsc"]:before, 
+.entry-content [class|="gsc"]:after {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.gsc-adBlock { display: none !important; }
+
+.page-id-111354155115 #main {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.page-id-111354155115 #main h1.entry-title {
+	font-weight: 700;
+	font-size: 1.875rem;
+  line-height: 1.225;
+	color: #292d33;
+}
+.page-id-111354155115 #main .gsc-search-box td,
+.page-id-111354155115 #main .gsc-search-box tr,
+.page-id-111354155115 #main .gsc-search-box th {
+	border: 0 none;
+}
+
+.page-id-111354155115 #main .gsib_a {
+	padding: 5px 10px;
+}
+
+.page-id-111354155115 #main .gsc-control-cse {
+	padding: 0;
+}
+
+
+.page-id-111354155115 #main .responsive-table{
+	overflow-x: initial;
+}
+
+.page-id-111354155115 #main .responsive-table table td{
+	width: initial !important;
+}
+
+.page-id-111354155115 #main .responsive-table table.gsc-search-box td.gsc-search-button{
+	width: 7% !important;
+}
